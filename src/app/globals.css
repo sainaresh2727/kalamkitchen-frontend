@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Root Elements */
+:root{
+    --primary-color:#27A8A3;
+    --secondary-color:#1E8E8A;
+    --primary-light:#4FD1CC;
+    --gradient-primary: linear-gradient(
+        135deg,
+        #27A8A3 0%,
+        #4FD1CC 50%,
+        #1E8E8A 100%
+      );
+      --gradient-button: linear-gradient(
+        135deg,
+        #27A8A3,
+        #1E8E8A
+      );
+      --shadow-primary: 0 10px 30px rgba(39, 168, 163, 0.2);
+      --shadow-hover: 0 20px 40px rgba(39, 168, 163, 0.3);
+}
+
+/* Comman Css */
+.trusted-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(39, 168, 163, 0.08);
+    border: 1px solid rgba(39, 168, 163, 0.15);
+    border-radius: 999px;
+    color: #1E8E8A;
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #27A8A3;
+    box-shadow: 0 0 10px rgba(39, 168, 163, 0.5);
+  }
