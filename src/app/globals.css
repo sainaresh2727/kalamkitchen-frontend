@@ -27,6 +27,9 @@
 }
 
 /* Comman Css */
+.container{
+  margin: 0px auto;
+}
 .trusted-badge {
     display: inline-flex;
     align-items: center;
