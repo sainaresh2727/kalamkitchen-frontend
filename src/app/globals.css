@@ -4,6 +4,8 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
 }
 
 /* Root Elements */
@@ -24,6 +26,8 @@
       );
       --shadow-primary: 0 10px 30px rgba(39, 168, 163, 0.2);
       --shadow-hover: 0 20px 40px rgba(39, 168, 163, 0.3);
+
+      --secodary-font:"Playfair Display SC", serif;
 }
 
 /* Comman Css */
@@ -51,3 +55,139 @@
     background: #27A8A3;
     box-shadow: 0 0 10px rgba(39, 168, 163, 0.5);
   }
+  .icons{
+    margin: auto 0px;
+  }
+  /* Navbar Css Starts */
+  .navbar-cf-lg{
+    padding: 15px 20px;
+  }
+  
+  .brand-logo-img{
+    margin: auto 0px;
+    /* height: 70px ;
+    width: 160px ; */
+  }
+  .links-ul{
+    margin: auto 0px;
+    letter-spacing: 1px;
+    transition: 1s;
+  }
+  .links-ul:hover{
+    color: var(--secondary-color);
+  }
+  .products-menu{
+    position: relative;
+}
+
+.products-dropdown{
+   position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  margin-top: 0;
+    width: 400px;
+    background: #ffffff;
+    border: 1px solid rgba(39,168,163,0.12);
+    border-radius: 24px;
+    padding: 12px;
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.10),
+        0 8px 24px rgba(39,168,163,0.08);
+    backdrop-filter: blur(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.35s ease;
+    z-index: 999;
+}
+.products-menu:hover .products-dropdown{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+.products-dropdown a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.products-dropdown a span{
+    color: #27A8A3;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.products-dropdown a:hover{
+    background: linear-gradient(
+        135deg,
+        #27A8A3,
+        #1E8E8A);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+.products-dropdown a:hover span{
+    color: #ffffff;
+    transform: translateX(6px);
+}
+.products-dropdown a::after{
+  content: "↗";
+  color: #27A8A3;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .3s ease;
+}
+
+.contact-us-btn{
+    padding: 15px 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: var(--gradient-button);
+    box-shadow: var(--shadow-primary);
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: auto 0px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+.call-us-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 13px 20px;
+  margin: auto 0px;
+  color: var(--primary-color);
+  border-radius: 12px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border: solid 1px black;
+  position: relative;
+  transition: all 0.4s ease;
+  font-weight: bold;
+}
+.call-us-btn:hover {
+   background-position: left bottom;
+   color: white !important;
+}
+.navbar-sm-container{
+  padding: 12px;
+  padding-right: 20px;
+}
+
+
+  /* Navbar Css Ends */
