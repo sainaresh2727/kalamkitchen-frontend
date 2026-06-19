@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 *{
-    padding: 0px;
-    margin: 0px;
+   
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     
@@ -28,11 +27,22 @@
       --shadow-hover: 0 20px 40px rgba(39, 168, 163, 0.3);
 
       --secodary-font:"Playfair Display SC", serif;
+      --card--box-shadow:0 12px 35px rgba(0, 0, 0, 0.08);
+      --transitions:all 0.35s ease;
 }
 
 /* Comman Css */
 .container{
   margin: 0px auto;
+}
+@media (max-width:768px) {
+  .container{
+   padding: 20px !important;
+  }
+}
+.para-content{
+  font-size: 15px;
+  line-height: 28px;
 }
 .trusted-badge {
     display: inline-flex;
@@ -46,17 +56,58 @@
     font-size: 14px;
     font-weight: 500;
     backdrop-filter: blur(10px);
+    align-self: flex-start;
   }
-  
+  @media (max-width:768px) {
+    .trusted-badge{
+      padding: 7px 12px;
+      font-size: 12px;
+      font-weight: 400;
+    } 
+  }
   .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     background: #27A8A3;
     box-shadow: 0 0 10px rgba(39, 168, 163, 0.5);
+    animation: frontBack 1.8s ease-in-out infinite;  
   }
+   
+  @keyframes frontBack{
+    0%,100%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.6);
+    }
+  }
+    
   .icons{
     margin: auto 0px;
+  }
+  .special-text{
+    color: var(--primary-color);
+  }
+  .arrow-icon{
+    color: var(--primary-color);
+  }
+  .icon-parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width:  55px;
+    background: rgba(39, 168, 163, 0.08);
+    border: 1px solid rgba(39, 168, 163, 0.15);
+    border-radius: 999px;
+    color: #1E8E8A;
+    font-size: 14px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+
   }
   /* Navbar Css Starts */
   .navbar-cf-lg{
@@ -71,7 +122,7 @@
   .links-ul{
     margin: auto 0px;
     letter-spacing: 1px;
-    transition: 1s;
+    transition: var(--transitions);
   }
   .links-ul:hover{
     color: var(--secondary-color);
@@ -188,6 +239,175 @@
   padding: 12px;
   padding-right: 20px;
 }
+ /* Navbar Css Ends */
 
+  /* Hero Section Css Starts */
 
-  /* Navbar Css Ends */
+  .hero-sec-cf{
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  @media (max-width:768px) {
+    .hero-sec-cf{
+      padding-top:    22px;
+      padding-bottom: 22px;
+    }
+  }
+  .animation-text{
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  .hero-img{
+    border-radius: 22px;
+  }
+  @keyframes floatUpDown {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .float-animation {
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+  /* Hero Section Css Ends */
+  /* Certification Css Starts */
+  .certification-card
+  {
+  border: 1.5px solid rgba(60, 186, 153, 0.55);
+  transition: 1s;
+  padding: 30px 25px;
+  border-radius: 12px;
+  }
+  .certification-card:hover{
+    box-shadow:
+    0 0 0 4px rgba(60, 186, 153, 0.08),   /* soft outer ring */
+    0 8px 32px rgba(60, 186, 153, 0.18),  /* green ambient glow */
+    0 2px 8px rgba(0, 0, 0, 0.10);  
+    transform: translateY(-10px);
+  }
+  .trusted-numbers-sec{
+    border: solid 1px transparent;
+    margin: 0px auto;
+    border-radius: 20px;
+  }
+ .value-card
+  {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--card--box-shadow);
+  }
+  /* Certification Css Ends */
+  /* Strength Css Starts */
+  .strength-card{
+    background-color: #ffffff;
+    box-shadow: var(--card--box-shadow);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: var(--transitions);
+  }
+  .strength-card:hover
+  {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  }
+  /* Strength Css Ends */
+
+  /* Missions And Vissions Css Starts */
+  .mision-vision-img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .mision-vision-img img{
+    border-radius: 50%;
+  }
+  @media (max-width:768px) {
+    .mision-vision-img{
+      margin: 0px auto;
+    }
+  }
+  /* Missions And Vissions Css Ends */
+  /* What We Are Css Starts */
+  .what-we-are-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .what-we-are-img img{
+    width: 525px ;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: var(--shadow-primary);
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+ @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .what-we-are-icon-parent{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .core-values-card{
+    background-color: #ffffff;
+    box-shadow: var(--card--box-shadow);
+    border-radius: 18px;
+    padding: 25px 30px;
+  
+  }
+  @media (max-width:768px) {
+    .what-we-are-img img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+  /* What We Are Css Ends */
+  /* Why Choose Us Css Starts */
+  .why-choose-us-card{
+    background-color: #ffffff;
+    box-shadow: var(--card--box-shadow);
+    border-radius: 18px;
+    padding: 25px 30px;
+    transition: var(--transitions);
+  }
+  .why-choose-us-card:hover{
+  box-shadow:
+  0 0 0 4px rgba(60, 186, 153, 0.08),   /* soft outer ring */
+  0 8px 32px rgba(60, 186, 153, 0.18),  /* green ambient glow */
+  0 2px 8px rgba(0, 0, 0, 0.10);  
+  transform: translateY(-10px);
+  }
+  .why-choose-us-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .why-choose-us-img img{
+    width: 600px ;
+    height: 740px;
+    border-radius: 30px;
+    box-shadow: var(--shadow-primary);
+    animation: floatUpDown 3s ease-in-out infinite;
+  }
+  @media (max-width:768px) {
+    .why-choose-us-img img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+    /* Why Choose Us Css Ends */

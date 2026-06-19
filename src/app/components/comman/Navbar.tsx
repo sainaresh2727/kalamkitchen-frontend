@@ -5,9 +5,11 @@ import brandLogo from '../../../../public/Images/BrandLogo/brandlogo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IoIosArrowDown } from "react-icons/io";
-import { MdAddCall } from "react-icons/md";
+
 import { FaBars } from "react-icons/fa";
 import { FiMenu, FiX,FiChevronDown } from "react-icons/fi";
+import ContactBtn from '../Buttons/ContactBtn'
+import CallUsBtn from '../Buttons/CallUsBtn'
 
 function Navbar() {
   
@@ -68,9 +70,9 @@ const closeDrawer = () => {
    <li><Link href={'/'} className='links-ul'>Blogs</Link></li>
    </ul>
 
-   <div className='flex items-center justify-center gap-6'>
-   <button className='contact-us-btn'>CONTACT  US</button>
-   <button className='call-us-btn'>CALL US <MdAddCall className='text-lg'/></button>
+   <div className='flex items-center justify-center gap-5'>
+   <ContactBtn/>
+   <CallUsBtn/>
    </div>
 
    </div>
@@ -84,8 +86,8 @@ const closeDrawer = () => {
    <Image src={brandLogo} alt='brand-logo' className='brand-logo-img h-[55] w-[135]'/>
    </div>
 
-    <button>
-    <FiMenu size={26} />
+    <button className='flex items-center justify-center'>
+    <FiMenu size={22} className='icons text-[#27A8A3]'  />
    </button>
 
    </div>

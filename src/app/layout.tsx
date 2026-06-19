@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import './animation.css'
 
 
 export const metadata: Metadata = {
