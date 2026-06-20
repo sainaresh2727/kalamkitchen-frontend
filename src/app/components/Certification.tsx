@@ -35,8 +35,8 @@ function Certification() {
           },
       ];
     const statsData = [
- { icon: FaProjectDiagram, value: 500, suffix: "+", label: "Projects" },
-  { icon: FaCalendarAlt, value: 15, suffix: "+", label: "Years Exp" },
+ { icon: FaProjectDiagram, value: 2000, suffix: "+", label: "Projects" },
+  { icon: FaCalendarAlt, value: 9, suffix: "+", label: "Years Exp" },
   { icon: FaMapMarkedAlt, value: 1, suffix: "", label: "Pan India Presence" },
   { icon: FaIndustry, value: 100, suffix: "%", label: "Premium SS Mfg" },
       ];
@@ -137,7 +137,7 @@ function Certification() {
 
     <div ref={ref} className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6">
 
-{statsData.map((item, index) => {
+      {statsData.map((item, index) => {
   const Icon = item.icon;
 
   return (
@@ -151,7 +151,7 @@ function Certification() {
         {inView ? (
           <CountUp
             end={item.value}
-            duration={4.1}
+            duration={5.1}
             suffix={item.suffix}
           />
         ) : (
@@ -166,7 +166,7 @@ function Certification() {
 
     </div>
   );
-})}
+      })}
 
     </div>
 

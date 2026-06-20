@@ -48,7 +48,7 @@ const closeDrawer = () => {
 
    <ul className='flex items-center justify-center gap-12'>
    <li><Link href={'/'} className='links-ul'>Home</Link></li>
-   <li> <Link href={'/'} className='links-ul'>About Us</Link></li>
+   <li> <Link href={'/About'} className='links-ul'>About Us</Link></li>
    
    <li className="products-menu group">
   <Link href="/" className="links-ul flex items-center justify-center gap-1">

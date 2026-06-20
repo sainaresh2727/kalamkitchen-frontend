@@ -6,18 +6,20 @@ import OurStrength from './components/OurStrength'
 import MissionandVissions from './components/MissionandVissions'
 import WhatWeAre from './components/comman/WhatWeAre'
 import WhyChooseUs from './components/WhyChooseUs'
+import Testimonals from './components/Testimonals'
 
 function page() {
   return (
    <>
    
-   <Navbar/>
+   {/* <Navbar/> */}
    <HeroSection/>
    <Certification/>
    <OurStrength/>
    <MissionandVissions/>
    <WhatWeAre/>
    <WhyChooseUs/>
+   {/* <Testimonals/> */}
    </>
   )
 }

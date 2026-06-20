@@ -411,3 +411,154 @@
     }
   }
     /* Why Choose Us Css Ends */
+    /* Testimonals Css Starts */
+    .testimonials-slider{
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .testimonials-track{
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollTestimonials 40s linear infinite;
+  }
+  
+  .testimonials-slider:hover .testimonials-track{
+      animation-play-state: paused;
+  }
+  
+  @keyframes scrollTestimonials{
+      from{
+          transform: translateX(0);
+      }
+  
+      to{
+          transform: translateX(-50%);
+      }
+  }
+  .testimonials-card{
+    width: 350px;
+    flex-shrink: 0;
+    background: white;
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid rgba(39,168,163,.12);
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+    transition: .3s;
+    position: relative;
+}
+
+.testimonials-card:hover{
+    transform: translateY(-8px);
+}
+.client-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#27A8A3,#1E8E8A);
+    color: white;
+    font-weight: 700;
+}
+.quote-top{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  color: #27A8A3;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.quote-bottom{
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  color: #27A8A3;
+  font-size: 42px;
+  font-weight: 700;
+}
+    /* Testimonals Css Ends */
+    /* About Us Css Starts */
+    .about-us-img{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-us-img img{
+      width: 550px ;
+      height: 610px;
+      border-radius: 30px;
+      box-shadow: var(--shadow-primary);
+      animation: floatUpDown 3s ease-in-out infinite;
+    }
+    @media (max-width:768px) {
+      .about-us-img img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+   @keyframes floatUpDown {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    /* About Us Css Ends */
+    /* Infrastructure Css Starts */
+    .infra-card{
+      background: #ffffff;
+      box-shadow: var(--card--box-shadow);
+      padding: 20px;
+      border-radius: 20px;
+    }
+    .icon-parent-infra{
+      height: 60px;
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: solid 1px transparent;
+      color: white;
+      background: var(--gradient-button);
+    }
+    .infra-dept-card
+    {
+    background-color: #ffffff;
+    box-shadow: var(--card--box-shadow);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: var(--transitions);
+    padding: 20px;
+    }
+    .infra-dept-card:hover
+    {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+    /* Infrastructure Css Ends */
