@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 
 function ContactBtn() {
   return (
     <>
-    <button className='contact-us-btn'>CONTACT  US</button>
+    <Link href={'/contact-us'} className='contact-us-btn'>CONTACT  US</Link>
     </>
   )
 }

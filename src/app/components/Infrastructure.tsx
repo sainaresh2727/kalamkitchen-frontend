@@ -76,7 +76,7 @@ const infrastructureStats = [
   ];
   return (
     <>
-    <section className='lg:py-20'>
+    <section className='lg:py-10'>
     <div className="container grid grid-cols-1 lg:grid-cols-2 gap-10">
     
     <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 items-center'>
@@ -118,7 +118,7 @@ const infrastructureStats = [
           </div>
 
           <div>
-          <h6 className='text-2xl font-bold italic text-[#27A8A3]'>{x.value}</h6>
+          <h6 className='text-1xl font-bold italic text-[#27A8A3]'>{x.value}</h6>
           <p className='text-gray-700 text-[12px]'>{x.label}</p>
           </div>
 

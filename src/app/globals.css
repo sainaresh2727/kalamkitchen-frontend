@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
 *{
-   
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
 }
 
 /* Root Elements */
@@ -37,7 +35,7 @@
 }
 @media (max-width:768px) {
   .container{
-   padding: 20px !important;
+   padding: 20px;
   }
 }
 .para-content{
@@ -73,7 +71,6 @@
     box-shadow: 0 0 10px rgba(39, 168, 163, 0.5);
     animation: frontBack 1.8s ease-in-out infinite;  
   }
-   
   @keyframes frontBack{
     0%,100%{
         transform: scale(1);
@@ -83,8 +80,7 @@
         transform: scale(1.6);
     }
   }
-    
-  .icons{
+.icons{
     margin: auto 0px;
   }
   .special-text{
@@ -107,14 +103,22 @@
     font-weight: 500;
     backdrop-filter: blur(10px);
     border-radius: 50%;
-
   }
+  .input{
+    outline: none;
+    transition: var(--transitions);
+  }
+  .input:focus{
+  outline: none;
+  border-color: #27A8A3;
+  box-shadow: 0 0 0 3px rgba(39, 168, 163, 0.2);
+  }
+
   /* Navbar Css Starts */
   .navbar-cf-lg{
     padding: 15px 20px;
   }
-  
-  .brand-logo-img{
+.brand-logo-img{
     margin: auto 0px;
     /* height: 70px ;
     width: 160px ; */
@@ -130,7 +134,6 @@
   .products-menu{
     position: relative;
 }
-
 .products-dropdown{
    position: absolute;
     top: 100%;
@@ -168,14 +171,12 @@
     font-weight: 500;
     transition: all 0.3s ease;
 }
-
 .products-dropdown a span{
     color: #27A8A3;
     font-size: 18px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
-
 .products-dropdown a:hover{
     background: linear-gradient(
         135deg,
@@ -195,7 +196,6 @@
   font-weight: 600;
   transition: .3s ease;
 }
-
 .contact-us-btn{
     padding: 15px 20px;
     border-radius: 12px;
@@ -240,10 +240,8 @@
   padding-right: 20px;
 }
  /* Navbar Css Ends */
-
-  /* Hero Section Css Starts */
-
-  .hero-sec-cf{
+/* Hero Section Css Starts */
+.hero-sec-cf{
     padding-top: 45px;
     padding-bottom: 45px;
   }
@@ -265,7 +263,6 @@
     50% { transform: translateY(-12px); }
     100% { transform: translateY(0px); }
   }
-  
   .float-animation {
     animation: floatUpDown 3s ease-in-out infinite;
   }
@@ -314,8 +311,7 @@
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
   }
   /* Strength Css Ends */
-
-  /* Missions And Vissions Css Starts */
+ /* Missions And Vissions Css Starts */
   .mision-vision-img{
     height: 70px;
     width: 70px;
@@ -367,7 +363,8 @@
     background-color: #ffffff;
     box-shadow: var(--card--box-shadow);
     border-radius: 18px;
-    padding: 25px 30px;
+    width: 170px !important;
+    padding: 20px;
   
   }
   @media (max-width:768px) {
@@ -417,24 +414,20 @@
       overflow: hidden;
       position: relative;
   }
-  
   .testimonials-track{
     display: flex;
     gap: 20px;
     width: max-content;
     animation: scrollTestimonials 40s linear infinite;
   }
-  
   .testimonials-slider:hover .testimonials-track{
       animation-play-state: paused;
   }
-  
   @keyframes scrollTestimonials{
-      from{
+  from{
           transform: translateX(0);
       }
-  
-      to{
+  to{
           transform: translateX(-50%);
       }
   }
@@ -449,7 +442,6 @@
     transition: .3s;
     position: relative;
 }
-
 .testimonials-card:hover{
     transform: translateY(-8px);
 }
@@ -479,7 +471,6 @@
   font-size: 42px;
   font-weight: 700;
 }
-
 .quote-bottom{
   position: absolute;
   right: 20px;
@@ -495,8 +486,8 @@
   font-size: 42px;
   font-weight: 700;
 }
-    /* Testimonals Css Ends */
-    /* About Us Css Starts */
+/* Testimonals Css Ends */
+/* About Us Css Starts */
     .about-us-img{
       display: flex;
       align-items: center;
@@ -533,6 +524,7 @@
       box-shadow: var(--card--box-shadow);
       padding: 20px;
       border-radius: 20px;
+      padding-right: 20px;
     }
     .icon-parent-infra{
       height: 60px;
@@ -562,3 +554,14 @@
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     }
     /* Infrastructure Css Ends */
+    .contact-submit-btn{
+      padding: 12px 18px;
+      background: var(--gradient-button);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      color: white;
+      width: 100%;
+      font-size: 14px;
+    }
