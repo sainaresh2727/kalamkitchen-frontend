@@ -3,6 +3,7 @@
 *{
    box-sizing: border-box;
    font-family: "Poppins", sans-serif;
+   cursor: pointer;
 }
 
 /* Root Elements */
@@ -27,6 +28,7 @@
       --secodary-font:"Playfair Display SC", serif;
       --card--box-shadow:0 12px 35px rgba(0, 0, 0, 0.08);
       --transitions:all 0.35s ease;
+      --gradient-secondary:linear-gradient(135deg,#27A8A3,#1E8E8A);
 }
 
 /* Comman Css */
@@ -39,7 +41,7 @@
   }
 }
 .para-content{
-  font-size: 15px;
+  font-size: 14px;
   line-height: 28px;
 }
 .trusted-badge {
@@ -339,6 +341,11 @@
     box-shadow: var(--shadow-primary);
     animation: floatUpDown 3s ease-in-out infinite;
   }
+  @media (max-width:768px) {
+    .what-we-are-img{
+     display: none;
+    }
+  }
  @keyframes floatUpDown {
     0% {
       transform: translateY(0);
@@ -402,9 +409,8 @@
     animation: floatUpDown 3s ease-in-out infinite;
   }
   @media (max-width:768px) {
-    .why-choose-us-img img{
-      height: 100%;
-      width: 100%;
+    .why-choose-us-img{
+      display: none;
     }
   }
     /* Why Choose Us Css Ends */
@@ -452,7 +458,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg,#27A8A3,#1E8E8A);
+    background: var(--gradient-secondary);
     color: white;
     font-weight: 700;
 }
@@ -565,3 +571,41 @@
       width: 100%;
       font-size: 14px;
     }
+    /* Footer Css Starts */
+    .footer-cf{
+      background: #EAF6F5;
+    }
+   .social-media-parent{
+    border: solid 1px var(--primary-color);
+    transition: 1s;
+   }
+   .media-icon{
+    transition: 1s;
+   }
+   .social-media-parent:hover{
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    border: solid 1px transparent;
+   }
+   .social-media-parent:hover .media-icon{
+     color: white;
+   }
+   .icon-bg {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(39, 168, 163, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 18px;
+  transition: all 0.35s ease;
+}
+
+.group:hover .icon-bg {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-3px) rotate(5deg);
+}
+    /* Footer Css Ends */

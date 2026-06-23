@@ -32,7 +32,7 @@ function WhyChooseUs() {
   return (
    <>
    
-   <section className='py-10 lg:py-20'>
+   <section className='pt-10 lg:py-20'>
    <div className="container grid grid-cols-1 lg:grid-cols-2 gap-6">
     
    <div className="why-choose-us-img">
@@ -51,7 +51,7 @@ function WhyChooseUs() {
    <p className='text-gray-700 para-content'>We specialize in providing end-to-end kitchen solutions including design, installation, and maintenance.</p>
    <p className='text-gray-700 para-content'>Our expert team ensures high-quality equipment, reliable service, and complete customer satisfaction for hotels, restaurants, and catering businesses.</p>
    
-   <div className='grid grid-cols-2 gap-4 mt-5'>
+   <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5'>
   { 
     whyChooseData.map((x,y)=>{
         return(
@@ -71,6 +71,8 @@ function WhyChooseUs() {
    </div>
    
    </div>
+
+ 
 
    </div>
    </section>

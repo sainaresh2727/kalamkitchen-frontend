@@ -21,14 +21,19 @@ function page() {
     {
       id:2,
       title:"EMAIL",
-      value:"kalamkitchen@gmail.com",
+      value:"kalamkitchenequipments@gmail.com",
       time:"Response within 4 hours",
       icon:<CiMail/>
     },
     {
       id:3,
       title:"SHOWROOM",
-      value:"Anna Nagar, Chennai",
+      value: [
+        "Kalam Kitchen Equipments,",
+        "NO 3273, Phase 1/2, TNHB,",
+        "Ayapakkam, Thiruvallur,",
+        "Chennai – 600077."
+      ],
       time:"Walk In, No Appoinment.",
       icon:<FaLocationDot/>
     },
@@ -65,9 +70,18 @@ function page() {
         </span>
         </div>
           <div className='flex flex-col gap-1'>
-          <p className='text-gray-700 text-[12px]'>{x.title}</p>
-          <h6 className='italic text-1xl font-bold text-[#27A8A3]'>{x.value}</h6>
-          <p className='text-gray-700 text-sm'>{x.time}</p>
+          <p className='text-gray-700 text-[12px] tracking-wider'>{x.title} :</p>
+          <h6 className=' text-[12px]  text-[#27A8A3] tracking-wide whitespace-pre-line'>
+          {Array.isArray(x.value)
+         ? x.value.map((line, i) => (
+         <span key={i} className="block">
+          {line}
+        </span>
+          ))
+          : x.value}
+          </h6>
+
+          <p className='text-gray-700 text-[12px]'>{x.time}</p>
           </div>
           </div>
         )
@@ -84,21 +98,21 @@ function page() {
 
     <form action="">
     <div className='grid grid-cols-2 gap-5'>
-    <div className='flex flex-col gap-1'>
-    <label className='text-gray-700 text-[12px]'>YOUR NAME:</label>
-    <input type="text" placeholder='Name' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-sm' />
+    <div className='flex flex-col gap-2'>
+    <label className='text-gray-700 tracking-wider text-[12px]'>YOUR NAME:</label>
+    <input type="text" placeholder='Name' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' />
     </div>
-    <div className='flex flex-col gap-1'>
-    <label className='text-gray-700 text-[12px]'>PHONE NUMBER:</label>
-    <input type="text" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-sm' />
+    <div className='flex flex-col gap-2'>
+    <label className='text-gray-700 tracking-wider text-[12px]'>PHONE NUMBER:</label>
+    <input type="text" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' />
     </div>
-    <div className='flex flex-col gap-1'>
-    <label className='text-gray-700 text-[12px]'>BUSINESS EMAIL:</label>
-    <input type="mail" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-sm' />
+    <div className='flex flex-col gap-2'>
+    <label className='text-gray-700 tracking-wider text-[12px]'>BUSINESS EMAIL:</label>
+    <input type="mail" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' />
     </div>
-     <div className='flex flex-col gap-1'>
-    <label className='text-gray-700 text-[12px]'>TYPE OF ESTABLISHMENT:</label>
-    <select name="" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-sm text-gray-700'>
+     <div className='flex flex-col gap-2'>
+    <label className='text-gray-700 tracking-wider text-[12px]'>TYPE OF ESTABLISHMENT:</label>
+    <select name="" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px] text-gray-700'>
     <option hidden>Select Your Business Type </option>
     <option value="">Restaurent / Hotel</option>
     <option value="">Cloud Kitchen</option>
@@ -109,12 +123,12 @@ function page() {
     </div>
     </div>
 
-    <div className='flex flex-col gap-1'>
-    <label className='text-gray-700 text-[12px]'>DETAILS:</label>
-    <textarea name="" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-sm text-gray-700' placeholder='Details' rows={5}></textarea>
+    <div className='flex flex-col gap-2 mt-5'>
+    <label className='text-gray-700 text-[12px] tracking-wider'>DETAILS:</label>
+    <textarea name="" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px] text-gray-700' placeholder='Details' rows={5}></textarea>
     </div>
 
-    <div>
+    <div className='mt-6'>
     <input type="submit" className='contact-submit-btn mt-3' value={"CONTACT HERE"} />
     </div>
     </form>
