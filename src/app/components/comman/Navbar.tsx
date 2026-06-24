@@ -56,7 +56,7 @@ const closeDrawer = () => {
   </Link>
 
   <div className="products-dropdown">
-    <Link href="/">Kitchen Storage Equipments</Link>
+    <Link href={'/pages/kitchen-storage-equipments'}>Kitchen Storage Equipments</Link>
     <Link href="/">Kitchen Preparation Equipments</Link>
     <Link href="/">Kitchen Cooking Equipments</Link>
     <Link href="/">Steam Cooking Equipments</Link>

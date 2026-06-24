@@ -14,7 +14,7 @@ function page() {
     {
       id:1,
       title:"CALL US",
-      value:"9865360214",
+      value:"9865360334",
       time:"Mon – Sat, 9am – 6pm",
       icon:<MdAddCall/>
     },
