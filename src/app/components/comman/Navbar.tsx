@@ -51,7 +51,7 @@ const closeDrawer = () => {
    <li> <Link href={'/About'} className='links-ul'>About Us</Link></li>
    
    <li className="products-menu group">
-  <Link href="/" className="links-ul flex items-center justify-center gap-1">
+  <Link href="/all-product" className="links-ul flex items-center justify-center gap-1">
     Products <IoIosArrowDown className='transition-transform duration-300 group-hover:rotate-180'/>
   </Link>
 
@@ -67,7 +67,9 @@ const closeDrawer = () => {
     <Link href="/">Wash / Plate Wash Equipments</Link>
   </div>
    </li>
+   
    <li><Link href={'/'} className='links-ul'>Blogs</Link></li>
+   <li><Link href={'/tool'} className='links-ul'>Tool</Link></li>
    </ul>
 
    <div className='flex items-center justify-center gap-5'>

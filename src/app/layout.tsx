@@ -5,6 +5,8 @@ import Navbar from "./components/comman/Navbar";
 import Footer from "./components/comman/Footer";
 import Testimonals from "./components/Testimonals";
 import Faqs from './components/Faqs'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 export const metadata: Metadata = {
   title: "",
@@ -25,6 +27,12 @@ export default function RootLayout({
     <body>
     <Navbar/>
     {children}
+    <ToastContainer position="top-center"  autoClose={2000}
+          newestOnTop
+          closeOnClick
+          pauseOnHover
+          draggable
+          theme="colored" />
     <Faqs/>
     <Testimonals/>
     <Footer/>

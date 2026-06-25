@@ -125,6 +125,13 @@
     backdrop-filter: blur(10px);
     border-radius: 50%;
   }
+  .comman-green-div{
+    background: rgba(39, 168, 163, 0.08);
+    border: 1px solid rgba(39, 168, 163, 0.15);
+    border-radius: 999px;
+    backdrop-filter: blur(10px);
+    
+  }
   .input{
     outline: none;
     transition: var(--transitions);
