@@ -3,6 +3,8 @@
 import React from 'react'
 import Image from 'next/image'
 import {kitchenStorageEquipmentArray} from '../../data/products/KitchenStorageEquip'
+import {kitchenPreparationEquipmentArray} from '../../data/products/kitchenPreparation'
+import {kitchenCookingEquipmentArray} from '../../data/products/kitchenCookingEquipments'
 
 import { useParams } from 'next/navigation';
 import MainpdctPage from '../../components/MainpdctPage';
@@ -14,8 +16,14 @@ import MainpdctPage from '../../components/MainpdctPage';
   const params= useParams();
   const slug=params?.slug
 
+  const allProducts=[
+    ...kitchenStorageEquipmentArray,
+    ...kitchenPreparationEquipmentArray,
+    ...kitchenCookingEquipmentArray,
+    ]
+
   // Finding Product
-  const findProduct=kitchenStorageEquipmentArray.find((x,y)=>{
+  const findProduct=allProducts.find((x,y)=>{
     return x.slug===slug
   })
 

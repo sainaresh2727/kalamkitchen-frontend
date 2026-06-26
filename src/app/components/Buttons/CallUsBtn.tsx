@@ -5,7 +5,7 @@ function CallUsBtn() {
   return (
     <>
     
-    <button className='call-us-btn'>CALL US <MdAddCall className='text-lg'/></button>
+    <a href='tel:+918248321081' className='call-us-btn'>CALL US <MdAddCall className='text-lg'/></a>
     
     </>
   )

@@ -14,7 +14,7 @@ function page() {
     {
       id:1,
       title:"CALL US",
-      value:"9865360334",
+      value:"+91 8248321081",
       time:"Mon – Sat, 9am – 6pm",
       icon:<MdAddCall/>
     },

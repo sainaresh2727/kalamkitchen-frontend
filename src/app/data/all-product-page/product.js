@@ -1,9 +1,23 @@
 
-import img from '../../../../public/Images/Products/kitchenStorageEquip/attabin.png'
+import storageimg from '../../../../public/Images/AllMainPdct/kitchenStorageMainImg.png'
+import perfectimg from '../../../../public/Images/AllMainPdct/Perfect.png'
+import cookingImg from '../../../../public/Images/AllMainPdct/cooking.png'
+import steam from '../../../../public/Images/AllMainPdct/steam.png'
+import refrigerator from '../../../../public/Images/AllMainPdct/refrigenator.png'
+import machines from '../../../../public/Images/AllMainPdct/kitchenmachines.png'
+import canteen from '../../../../public/Images/AllMainPdct/canteen.png'
+import trolly from '../../../../public/Images/AllMainPdct/trolly.png'
+import washing from '../../../../public/Images/AllMainPdct/washing.png'
+import exhaust from '../../../../public/Images/AllMainPdct/exhaust.png'
+import baking from '../../../../public/Images/AllMainPdct/baking.png'
+import customized from '../../../../public/Images/AllMainPdct/customized.png'
+import diningtable from '../../../../public/Images/AllMainPdct/diningtable.png'
+
+
 export const allProduct=[
     {
         id:1,
-        image:img,
+        image:storageimg,
         category:"Kitchen Storage Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Optimized Storage Solutions",
@@ -20,7 +34,7 @@ export const allProduct=[
     },
     {
         id:2,
-        image:img,
+        image:perfectimg,
         category:"Kitchen Preparation Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Equipment for Perfect Preparation",
@@ -37,7 +51,7 @@ export const allProduct=[
     },
     {
         id:3,
-        image:img,
+        image:cookingImg,
         category:"Kitchen Cooking Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Professional Cooking Tools",
@@ -54,7 +68,7 @@ export const allProduct=[
     },
     {
         id:4,
-        image:img,
+        image:steam,
         category:"Steam Cooking Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Efficient Steam Solutions",
@@ -71,7 +85,7 @@ export const allProduct=[
     },
     {
         id:5,
-        image:img,
+        image:refrigerator,
         category:"Refrigeration Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Cool & Fresh",
@@ -88,7 +102,7 @@ export const allProduct=[
     },
     {
         id:6,
-        image:img,
+        image:machines,
         category:"Kitchen Machines",
         slug:"/pages/kitchen-storage-equipments",
         name:"Advanced Kitchen Machinery",
@@ -105,7 +119,7 @@ export const allProduct=[
     },
     {
         id:7,
-        image:img,
+        image:canteen,
         category:"Serving Canteen  Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Innovative Solutions for Efficient Dining",
@@ -122,7 +136,7 @@ export const allProduct=[
     },
     {
         id:8,
-        image:img,
+        image:trolly,
         category:"Kitchen Trolleys",
         slug:"/pages/kitchen-storage-equipments",
         name:"Mobile Convenience",
@@ -139,7 +153,7 @@ export const allProduct=[
     },
     {
         id:9,
-        image:img,
+        image:washing,
         category:"Wash Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Efficient Cleaning Solutions",
@@ -156,7 +170,7 @@ export const allProduct=[
     },
     {
         id:10,
-        image:img,
+        image:exhaust,
         category:"Exhaust Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Safe & Efficient Systems",
@@ -173,7 +187,7 @@ export const allProduct=[
     },
     {
         id:11,
-        image:img,
+        image:baking,
         category:"Baking Equipments",
         slug:"/pages/kitchen-storage-equipments",
         name:"Baking Made Easy",
@@ -190,7 +204,7 @@ export const allProduct=[
     },
     {
         id:12,
-        image:img,
+        image:customized,
         category:"Customized Fabrication",
         slug:"/pages/kitchen-storage-equipments",
         name:"Tailored to Your Needs",
@@ -207,7 +221,7 @@ export const allProduct=[
     },
     {
         id:13,
-        image:img,
+        image:diningtable,
         category:"Dinning Table & Chairs",
         slug:"/pages/kitchen-storage-equipments",
         name:"Elegant Dining Furniture",

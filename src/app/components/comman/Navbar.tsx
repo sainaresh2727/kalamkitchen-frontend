@@ -42,13 +42,13 @@ const closeDrawer = () => {
    <section className='navbar-cf-lg  hidden lg:block'>
    <div className="container flex items-center justify-between">
    
-   <div className="brand-logo-lg">
+   <Link href='/' className="brand-logo-lg">
    <Image src={brandLogo} alt='brand-logo' className='brand-logo-img h-[70] w-[160]'/>
-   </div>
+   </Link>
 
    <ul className='flex items-center justify-center gap-12'>
-   <li><Link href={'/'} className='links-ul'>Home</Link></li>
-   <li> <Link href={'/About'} className='links-ul'>About Us</Link></li>
+   <li><Link href='/' className='links-ul'>Home</Link></li>
+   <li> <Link href='/About' className='links-ul'>About Us</Link></li>
    
    <li className="products-menu group">
   <Link href="/all-product" className="links-ul flex items-center justify-center gap-1">
@@ -56,9 +56,9 @@ const closeDrawer = () => {
   </Link>
 
   <div className="products-dropdown">
-    <Link href={'/pages/kitchen-storage-equipments'}>Kitchen Storage Equipments</Link>
-    <Link href="/">Kitchen Preparation Equipments</Link>
-    <Link href="/">Kitchen Cooking Equipments</Link>
+    <Link href='/pages/kitchen-storage-equipments'>Kitchen Storage Equipments</Link>
+    <Link href="/pages/kitchen-preparation-equipments">Kitchen Preparation Equipments</Link>
+    <Link href="/pages/kitchen-cooking-equipments">Kitchen Cooking Equipments</Link>
     <Link href="/">Steam Cooking Equipments</Link>
     <Link href="/">Kitchen Machines</Link>
     <Link href="/">Refrigeration Equipments</Link>

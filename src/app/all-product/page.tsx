@@ -5,10 +5,44 @@ import Link from 'next/link'
 import { IoArrowRedo } from "react-icons/io5";
 
 function page() {
-   
+  
+  function CheckIcon() {
+    return (
+      <div className="w-5 h-5 rounded-full bg-[#27A8A3] flex items-center justify-center flex-shrink-0">
+        <svg
+          className="w-3 h-3"
+          fill="none"
+          stroke="white"
+          strokeWidth="2.5"
+          viewBox="0 0 24 24"
+        >
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+    );
+  }
+
+  function ArrowIcon() {
+    return (
+      <svg
+        className="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+        />
+      </svg>
+    );
+  }
+
   return (
     <>
-    <section className='lg:py-20' style={{background: "linear-gradient(135deg, #071828 0%, #0d2a3c 55%, #0a2218 100%)"}}>
+    <section className='lg:py-20 py-10' style={{background: "linear-gradient(135deg, #071828 0%, #0d2a3c 55%, #0a2218 100%)"}}>
     <div className="container flex flex-col items-center gap-5">
     
     <div className='trusted-badge mx-auto'>
@@ -21,7 +55,7 @@ function page() {
     <p className='text-gray-400 para-content text-center'>Precision-fabricated stainless steel kitchen equipment for commercial kitchens, hotels, canteens, and food processing units.</p>
     <div className="flex flex-wrap justify-center border border-[#27A8A3]/40 rounded-[18px] bg-[#27A8A3]/5 backdrop-blur-lg overflow-hidden mt-6 shadow-[0_0_0_1px_rgba(39,168,163,0.15),0_8px_32px_rgba(39,168,163,0.12),0_2px_8px_rgba(0,0,0,0.2)] w-full max-w-lg mx-auto p-x-3">
   {[
-    { num: "6+",      label: "Categories"    },
+    { num: "10+",      label: "Categories"    },
     { num: "SS 316",  label: "Top Grade"     },
     { num: "Custom",  label: "Sizing"        },
     { num: "Chennai", label: "Made in India" },
@@ -61,47 +95,64 @@ function page() {
     <p className='text-gray-700 para-content text-center'>From storage to cooking — every product fabricated to your exact dimensions with your choice of SS grade.</p>
     </div>
 
-    <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6'>
+    <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6'>
     {
         allProduct.map((x,y)=>{
             return(
-                <div key={x.id} className='product-card flex flex-col gap-3  relative'>
-                <div className="relative overflow-hidden bg-gradient-to-br from-[rgba(39,168,163,0.05)] to-[rgba(79,209,204,0.03)] flex justify-center items-center h-[200px] border-b border-[rgba(39,168,163,0.08)] group">
-           <Image
-             src={x.image}
-             alt={x.name}
-             className="h-[160px] w-auto object-contain transition-transform duration-500 group-hover:scale-[1.06]"
-           />
-           {/* category pill */}
-           <span className="absolute top-3 left-3 text-[9px] font-bold tracking-[0.14em] uppercase text-[#27A8A3] bg-white border border-[rgba(39,168,163,0.22)] px-3 py-[3px] rounded-full">
-             {x.category}
-           </span>
-              </div>
-                 <div className='flex flex-col gap-2 px-5 py-2 pb-6'>
-                 {/* <p className='tracking-wider text-[#27A8A3] text-[12px] font-bold'>{x.type}</p> */}
-                 <h6 className='tracking-wider text-[13px] font-semibold'>{x.name}</h6>
-                 <p className='text-gray-700 text-[13px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, pariatur!</p>
-                 <p className="text-[11.5px] text-gray-400 font-light leading-relaxed relative pl-3 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[3px] before:rounded-sm before:bg-[#27A8A3]">
+              <div className="w-full rounded-3xl overflow-hidden flex flex-col md:flex-row  border border-[#27A8A3]/15 shadow-[0_4px_24px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_40px_rgba(39,168,163,0.14)] hover:-translate-y-1 transition-all duration-300">
+
+              {/* ── LEFT: Text Content ── */}
+              <div className="flex-1 flex flex-col justify-center px-8 py-10 md:px-10 md:py-12">
+        
+                {/* Category eyebrow */}
+                <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#27A8A3] mb-3">
+                  {x.category}
                 </p>
-                <div className='flex flex-col gap-3'>
-                {
-                    x.keyPoints.map((x,y)=>{
-                        return(
-                            <div className='flex items-center justify-center gap-2 border-1 p-3 comman-green-div'>
-                            <p className='text-[14px]' style={{fontFamily:"Playfair Display SC,serif"}}>{x.key}:</p>
-                            <p className='text-[12px] '>{x.value}</p>
-                            </div>
-                        )
-                    })
-                }
+        
+                {/* Product name */}
+                <h2 className="text-[1.5rem] md:text-[1.75rem] font-bold text-[#0f1f2e] leading-[1.2] mb-6">
+                  {x.name}
+                </h2>
+        
+                {/* Key Points */}
+                <ul className="flex flex-col gap-3 mb-8">
+                  {x.keyPoints.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <CheckIcon />
+                      <span className="text-[13.5px] text-[#3a4f6a] leading-snug">
+                        <span className="font-semibold text-[#0f1f2e]">{point.key}:</span>{" "}
+                        {point.value}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+        
+                {/* Learn More button */}
+                <div>
+                  <Link href={x.slug}>
+                    <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#27A8A3] text-white text-[13.5px] font-semibold hover:bg-[#1E8E8A] transition-colors duration-200 group">
+                      Learn More
+                      <span className="transition-transform duration-200 group-hover:translate-x-1">
+                        <ArrowIcon />
+                      </span>
+                    </button>
+                  </Link>
                 </div>
- 
-           {/* divider */}
-           <div className="h-[1px] bg-gradient-to-r from-[rgba(39,168,163,0.15)] to-transparent" />
-                
-                 <Link href={x.slug} className='full-details-btn mt-2'>VIEW MORE <IoArrowRedo className='text-lg' /></Link>
-                 </div>
-                 </div>
+        
+              </div>
+        
+              {/* ── RIGHT: Image ── */}
+              <div className="w-full md:w-[55%] h-[220px] md:h-auto flex-shrink-0 overflow-hidden">
+                <Image
+                  src={x.image}
+                  alt={x.name}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  width={800}
+                  height={450}
+                />
+              </div>
+        
+            </div>
             )
         })
     }
