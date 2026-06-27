@@ -27,7 +27,7 @@ export default function RootLayout({
     <body>
     <Navbar/>
     {children}
-    <ToastContainer position="top-center"  autoClose={2000}
+    <ToastContainer position="top-center"  autoClose={8000}
           newestOnTop
           closeOnClick
           pauseOnHover

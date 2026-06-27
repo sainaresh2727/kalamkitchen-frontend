@@ -7,7 +7,10 @@ import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdAddCall } from "react-icons/md";
 import { CiMail } from "react-icons/ci";
+import { AxiosError } from "axios";
+import { toast } from "react-toastify";
 
+import api from '../../services/api'
 
 function page() {
   const contactArray=[
@@ -39,7 +42,41 @@ function page() {
     },
   ]
 
+  const [contactDatas, setContactDatas] = useState({
+    name: "",
+    email: "",
+    phNumber: "",
+    description: "",
+    productType:""
+  })
+
+   //  Handlers
+   const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setContactDatas((prev) => ({ ...prev, [name]: value }));
+  };
   
+  async function addContactDatas(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    try {
+      const res = await api.post('/user/add/contact', contactDatas)
+      toast.success(res.data.message);
+      setContactDatas({
+        name: "",
+        email: "",
+        phNumber: "",
+        description: "",
+        productType: ""
+      })
+     
+    } catch (err) {
+      const error = err as AxiosError<{ message: string }>;
+      alert(error.response?.data?.message || "Something went wrong");
+    }
+  }
+
   return (
     <>
     <section>
@@ -96,36 +133,48 @@ function page() {
     <p className='text-gray-700 text-center para-content mt-1'>Tell Us What You Need — We'll Put Together A Custom Proposal Within 24 Hours.</p>
     </div>
 
-    <form action="">
+    <form action="" onSubmit={(e)=>addContactDatas(e)}>
     <div className='grid grid-cols-2 gap-5'>
+    
     <div className='flex flex-col gap-2'>
     <label className='text-gray-700 tracking-wider text-[12px]'>YOUR NAME:</label>
-    <input type="text" placeholder='Name' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' />
+    <input type="text" placeholder='Name' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' onChange={(e)=>handleChange(e)} name='name'  value={contactDatas.name}/>
     </div>
+    
     <div className='flex flex-col gap-2'>
     <label className='text-gray-700 tracking-wider text-[12px]'>PHONE NUMBER:</label>
-    <input type="text" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' />
+    <input type="text" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' onChange={(e)=>handleChange(e)} name='phNumber' value={contactDatas.phNumber} />
     </div>
+    
     <div className='flex flex-col gap-2'>
     <label className='text-gray-700 tracking-wider text-[12px]'>BUSINESS EMAIL:</label>
-    <input type="mail" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' />
+    <input type="mail" placeholder='Number' className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px]' onChange={(e)=>handleChange(e)} name='email' value={contactDatas.email} />
     </div>
+     
      <div className='flex flex-col gap-2'>
     <label className='text-gray-700 tracking-wider text-[12px]'>TYPE OF ESTABLISHMENT:</label>
-    <select name="" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px] text-gray-700'>
-    <option hidden>Select Your Business Type </option>
-    <option value="">Restaurent / Hotel</option>
-    <option value="">Cloud Kitchen</option>
-    <option value="">Cloud Kitchen</option>
-    <option value="">Cloud Kitchen</option>
-    <option value="">Cloud Kitchen</option>
+    <select name="productType" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px] text-gray-700' onChange={(e)=>handleChange(e)} required value={contactDatas.productType}>
+   
+    <option hidden>Select Your Requirements </option>
+    <option value="Kitchen Storage Equipments">Kitchen Storage Equipments</option>
+    <option value="Kitchen Preparation Equipments">Kitchen Preparation Equipments</option>
+    <option value="Kitchen Cooking Equipments">Kitchen Cooking Equipments</option>
+    <option value="Steam Cooking Equipments">Steam Cooking Equipments</option>
+    <option value="Refrigeration Equipments">Refrigeration Equipments</option>
+    <option value="Serving & Canteen Equipments">Serving & Canteen Equipments</option>
+    <option value="Kitchen Trolleys">Kitchen Trolleys</option>
+    <option value="Wash / Platewash / Potwash Equipments">Wash / Platewash / Potwash Equipments</option>
+    <option value="Exhaust / LPG / Steampanel Equipments">Exhaust / LPG / Steampanel Equipments</option>
+    <option value="Bakery Equipments">Bakery Equipments</option>
+    <option value="Customized Fabrication">Customized Fabrication</option>
+    <option value="Dinning Tables & Chairs">Dinning Tables & Chairs</option>
     </select>
     </div>
     </div>
 
     <div className='flex flex-col gap-2 mt-5'>
     <label className='text-gray-700 text-[12px] tracking-wider'>DETAILS:</label>
-    <textarea name="" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px] text-gray-700' placeholder='Details' rows={5}></textarea>
+    <textarea name="description" id="" className='border-1 input border-[#27A8A3] border-solid rounded-2xl p-3 text-[12px] text-gray-700' placeholder='Details' rows={5} onChange={(e)=>handleChange(e)} value={contactDatas.description}></textarea>
     </div>
 
     <div className='mt-6'>

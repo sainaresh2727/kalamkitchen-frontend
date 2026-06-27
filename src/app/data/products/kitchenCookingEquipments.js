@@ -1,21 +1,39 @@
 
 
 // Kitchen Cooking Equipment Array - ID-300
-import storageRack from '../../../../public/Images/Products/kitchenStorageEquip/storgaeRack.png'
-import storageCubboard from '../../../../public/Images/Products/kitchenStorageEquip/storagecubboard.png'
-import msStorageCubboard from '../../../../public/Images/Products/kitchenStorageEquip/msstoragecubboard.png'
-import wallMounted from '../../../../public/Images/Products/kitchenStorageEquip/wallmuntedshelf.png'
-import potatoOnionBin from '../../../../public/Images/Products/kitchenStorageEquip/potatoonionbin.png'
-import ravaBin from '../../../../public/Images/Products/kitchenStorageEquip/ravabin.png'
-import attaBin from '../../../../public/Images/Products/kitchenStorageEquip/attabin.png'
-import pallet from '../../../../public/Images/Products/kitchenStorageEquip/pallet.png'
+import singleBurner from '../../../../public/Images/Products/kitchencooking/singleburner.png'
+import sing2burnerleBurner from '../../../../public/Images/Products/kitchencooking/2burner.png'
+import sing3burnerleBurner from '../../../../public/Images/Products/kitchencooking/3burner.png'
+import sing4burnerleBurner from '../../../../public/Images/Products/kitchencooking/4burner.png'
+import burnerwithoven4 from '../../../../public/Images/Products/kitchencooking/4burneroven.png'
+import stockpotburner from '../../../../public/Images/Products/kitchencooking/stockpot.png'
+import chineesecookingrange from '../../../../public/Images/Products/kitchencooking/chinessecooking.png'
+import electricaldosaplate from '../../../../public/Images/Products/kitchencooking/electricaldosaplate.png'
+import castdosaplate from '../../../../public/Images/Products/kitchencooking/castirondosaplate.png'
+import tabletopdosaplate from '../../../../public/Images/Products/kitchencooking/tabletopdosaplate.png'
+import roundtandoori from '../../../../public/Images/Products/kitchencooking/roundtandoor.png'
+import electricaltandoori from '../../../../public/Images/Products/kitchencooking/electricaltandoori.png'
+import gastandoori from '../../../../public/Images/Products/kitchencooking/gastandoori.png'
+import squaretandoori from '../../../../public/Images/Products/kitchencooking/squaretandoori.png'
+import rumalirotitandoori from '../../../../public/Images/Products/kitchencooking/rumalirotitandoori.png'
+import rumalirotitrolly from '../../../../public/Images/Products/kitchencooking/rumalirotitrolly.png'
+import electricalrumalirotitrolly from '../../../../public/Images/Products/kitchencooking/electricalrumalirotitandoori.png'
+import shawarmagrill from '../../../../public/Images/Products/kitchencooking/shawarmagrill.png'
+import lpgelectricalshawarma from '../../../../public/Images/Products/kitchencooking/lpgelectricalshawarma.png'
+import barbequeeElectrical from '../../../../public/Images/Products/kitchencooking/barbequeelectrical.png'
+import lpgbarbequeeElectrical from '../../../../public/Images/Products/kitchencooking/lpgbarbecuegrill.png'
+import coalbarbequee from '../../../../public/Images/Products/kitchencooking/barbequeecoal.png'
+import automaticChappatiMachine from '../../../../public/Images/Products/kitchencooking/automaticchappt.png'
+import brattPan from '../../../../public/Images/Products/kitchencooking/brattpan.png'
+import deepbrat from '../../../../public/Images/Products/kitchencooking/deepfatfryer.png'
+import lpgromalirotitan from '../../../../public/Images/Products/kitchencooking/lpgrumalirotitandoori.png'
 
 
 export const kitchenCookingEquipmentArray=[
     {
         id:301,
         name:"Single Burner",
-        img:storageRack,
+        img:singleBurner,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Single Burner, merging functionality with style for efficient cooking performance. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -68,7 +86,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:302,
         name:"2 burner cooking range",
-        img:storageCubboard,
+        img:sing2burnerleBurner,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Single Burner, merging functionality with style for efficient cooking performance. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -124,7 +142,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:303,
         name:"3 Single Burner",
-        img:msStorageCubboard,
+        img:sing3burnerleBurner,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the 3-Burner Cooking Range, merging functionality with style for efficient cooking performance. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -176,7 +194,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:304,
         name:"4 burner cooking range",
-        img:wallMounted,
+        img:sing4burnerleBurner,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the 4-Burner Cooking Range, merging functionality with style for efficient cooking performance. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -228,7 +246,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:305,
         name:"4 burner with oven",
-        img:potatoOnionBin,
+        img:burnerwithoven4,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the 4-Burner Cooking Range with Oven, merging functionality with style for efficient cooking and baking performance. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -284,7 +302,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:306,
         name:"Stock Pot Burner",
-        img:ravaBin,
+        img:stockpotburner,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Stock Pot Burner, designed for efficient cooking and precise temperature control. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality..",
         keyFeatures:[
            {
@@ -340,7 +358,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:307,
         name:"Chinese Cooking Range",
-        img:attaBin,
+        img:chineesecookingrange,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Chinese Cooking Range, designed for authentic and efficient Chinese cuisine preparation. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -396,7 +414,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:308,
         name:"Electrical Dosa Plate",
-        img:pallet,
+        img:electricaldosaplate,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Electrical Dosa Plate, designed for precise dosa preparation and efficiency. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -452,7 +470,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:309,
         name:"Cast Iron Dosa Plate",
-        img:pallet,
+        img:castdosaplate,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Cast Iron Dosa Plate, crafted for traditional dosa cooking with excellent heat retention and durability. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -508,7 +526,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:310,
         name:"Table Top Dosa Plate",
-        img:pallet,
+        img:tabletopdosaplate,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Table Top Dosa Plate, designed for convenient and efficient dosa preparation. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -564,7 +582,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:311,
         name:"Round Tandoori",
-        img:pallet,
+        img:roundtandoori,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Round Tandoori, designed for authentic and efficient tandoori cooking. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -620,7 +638,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:312,
         name:"Electrical  Tandoori",
-        img:pallet,
+        img:electricaltandoori,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Round Tandoori, designed for authentic and efficient tandoori cooking. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
            {
@@ -676,7 +694,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:313,
         name:"Gas Tandoori",
-        img:pallet,
+        img:gastandoori,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Gas Tandoori, designed for efficient and authentic tandoori cooking. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures:[
             {
@@ -742,7 +760,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:314,
         name:"Square Tandoori",
-        img:pallet,
+        img:squaretandoori,
         des:"At Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Square Tandoori, crafted for efficient and authentic tandoori cooking. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality",
         keyFeatures:[
             {
@@ -808,7 +826,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:315,
         name:"Rumali Roti Tandoori",
-        img:pallet,
+        img:rumalirotitandoori,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Rumali Roti Tandoori, designed for preparing delicate and thin Rumali Rotis with precision and efficiency. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -874,7 +892,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:316,
         name:"Rumali Roti Trolley",
-        img:pallet,
+        img:rumalirotitrolly,
         des:"Kalam Kitchen's Rumali Roti Trolley is designed to enhance the efficiency and presentation of making and serving Rumali Roti. Our trolley features durable stainless steel construction, ergonomic design, and convenient mobility. Ideal for restaurants, catering services, and live cooking stations, it provides a reliable and versatile solution for preparing and serving Rumali Roti. The robust build ensures long-lasting performance, while the easy-to-clean surfaces and built-in storage compartments enhance functionality. Trust our Rumali Roti Trolley to improve your kitchen's efficiency and elevate your dining experience with high-quality and professional presentation.",
         keyFeatures: [
             {
@@ -945,7 +963,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:317,
         name:"Electrical Rumali Roti Tandoori",
-        img:pallet,
+        img:electricalrumalirotitrolly,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Electrical Rumali Roti Tandoori, designed for efficient and consistent preparation of delicate Rumali Rotis. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1011,7 +1029,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:318,
         name:"LPG Rumali Roti Tandoori",
-        img:pallet,
+        img:lpgromalirotitan,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the LPG Rumali Roti Tandoori, designed for authentic and efficient preparation of delicate Rumali Rotis. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1077,7 +1095,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:319,
         name:"Shawarma Grill",
-        img:pallet,
+        img:shawarmagrill,
         des:"Kalam Kitchen, we offer a state-of-the-art Shawarma Grill designed for authentic and flavorful shawarma preparation. Our grill ensures efficient cooking and superior taste, catering to culinary enthusiasts and professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1143,7 +1161,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:320,
         name:"LPG and Electrical Shawarma",
-        img:pallet,
+        img:lpgelectricalshawarma,
         des:"Kalam Kitchen, we offer a state-of-the-art Shawarma Grill designed for authentic and flavorful shawarma preparation. Our grill ensures efficient cooking and superior taste, catering to culinary enthusiasts and professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1204,7 +1222,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:321,
         name:"Barbeque Electrical",
-        img:pallet,
+        img:barbequeeElectrical,
         des:"Kalam Kitchen, we specialize in innovative electrical barbeques designed for efficient and flavorful grilling experiences. Our barbeques ensure convenience and quality, catering to culinary enthusiasts and professionals seeking superior taste and performance.",
         keyFeatures: [
             {
@@ -1265,7 +1283,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:322,
         name:"LPG Barbecue Grill",
-        img:pallet,
+        img:lpgbarbequeeElectrical,
         des:"Kalam Kitchen, we specialize in high-quality LPG barbeques designed for efficient and flavorful grilling experiences. Our barbeques ensure convenience and superior taste, catering to culinary enthusiasts and professionals seeking exceptional performance.",
         keyFeatures: [
             {
@@ -1326,7 +1344,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:323,
         name:"Coal Barbecue Gril",
-        img:pallet,
+        img:coalbarbequee,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the 3-Burner Cooking Range, merging functionality with style for efficient cooking performance. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1387,7 +1405,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:324,
         name:"Automatic Chapathi Machine",
-        img:pallet,
+        img:automaticChappatiMachine,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Automatic Chapathi Machine, designed for convenient and consistent chapathi production. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1453,7 +1471,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:325,
         name:"BRATT PAN",
-        img:pallet,
+        img:brattPan,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Brat Pan, designed for versatile cooking applications and efficiency. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {
@@ -1519,7 +1537,7 @@ export const kitchenCookingEquipmentArray=[
     {
         id:325,
         name:"Deep Fat Fryer",
-        img:pallet,
+        img:deepbrat,
         des:"Kalam Kitchen, we specialize in enhancing your culinary environment with innovative solutions like the Deep Fat Fryer, designed for efficient frying and culinary excellence. Our commitment ensures top-quality craftsmanship, catering to passionate chefs and culinary professionals, elevating kitchen experiences with convenience and quality.",
         keyFeatures: [
             {

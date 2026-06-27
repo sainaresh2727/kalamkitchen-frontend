@@ -62,7 +62,7 @@ function MainpdctPage({ product }: any) {
     productName: product.name || ""
   })
 
-  // ── Handlers ────────────────────────────────────────────────
+  // ── Handlers 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -70,7 +70,7 @@ function MainpdctPage({ product }: any) {
     setContactDatas((prev) => ({ ...prev, [name]: value }));
   };
 
-  // ── Form submit — defined OUTSIDE return ───────────────────
+  // ── Form submit — defined OUTSIDE return
   async function addContactDatas(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     try {
@@ -90,7 +90,7 @@ function MainpdctPage({ product }: any) {
     }
   }
 
-  // ── Tabs config ─────────────────────────────────────────────
+  // ── Tabs config
   const tabs = [
     {
       id: "features" as const,

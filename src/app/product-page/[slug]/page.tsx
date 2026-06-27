@@ -5,6 +5,8 @@ import Image from 'next/image'
 import {kitchenStorageEquipmentArray} from '../../data/products/KitchenStorageEquip'
 import {kitchenPreparationEquipmentArray} from '../../data/products/kitchenPreparation'
 import {kitchenCookingEquipmentArray} from '../../data/products/kitchenCookingEquipments'
+import {steamCookingEquipmentArray} from '../../data/products/steamCookingEquipments'
+import {kitchenMachinesArray} from '../../data/products/kitchenMachines'
 
 import { useParams } from 'next/navigation';
 import MainpdctPage from '../../components/MainpdctPage';
@@ -20,6 +22,8 @@ import MainpdctPage from '../../components/MainpdctPage';
     ...kitchenStorageEquipmentArray,
     ...kitchenPreparationEquipmentArray,
     ...kitchenCookingEquipmentArray,
+    ...steamCookingEquipmentArray,
+    ...kitchenMachinesArray
     ]
 
   // Finding Product
