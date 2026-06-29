@@ -7,6 +7,7 @@ import MissionandVissions from './components/MissionandVissions'
 import WhatWeAre from './components/comman/WhatWeAre'
 import WhyChooseUs from './components/WhyChooseUs'
 import Testimonals from './components/Testimonals'
+import Countries from './components/Countries'
 
 function page() {
   return (
@@ -19,6 +20,7 @@ function page() {
    <MissionandVissions/>
    <WhatWeAre/>
    <WhyChooseUs/>
+   <Countries/>
    {/* <Testimonals/> */}
    </>
   )

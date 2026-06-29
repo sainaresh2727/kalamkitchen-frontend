@@ -7,6 +7,11 @@ import {kitchenPreparationEquipmentArray} from '../../data/products/kitchenPrepa
 import {kitchenCookingEquipmentArray} from '../../data/products/kitchenCookingEquipments'
 import {steamCookingEquipmentArray} from '../../data/products/steamCookingEquipments'
 import {kitchenMachinesArray} from '../../data/products/kitchenMachines'
+import {refrigenatorDatas} from '../../data/products/Refrigenator'
+import {canteenEquipments} from '../../data/products/canteenEquipments'
+import {kitchenTrolleys} from '../../data/products/kitchenTrolleys'
+import {washEquipments} from '../../data/products/washEquipmemts'
+import {exhaustArray} from '../../data/products/kitchenExhaust'
 
 import { useParams } from 'next/navigation';
 import MainpdctPage from '../../components/MainpdctPage';
@@ -23,7 +28,12 @@ import MainpdctPage from '../../components/MainpdctPage';
     ...kitchenPreparationEquipmentArray,
     ...kitchenCookingEquipmentArray,
     ...steamCookingEquipmentArray,
-    ...kitchenMachinesArray
+    ...kitchenMachinesArray,
+    ...refrigenatorDatas,
+    ...canteenEquipments,
+    ...kitchenTrolleys,
+    ...washEquipments,
+    ...exhaustArray
     ]
 
   // Finding Product

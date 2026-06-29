@@ -3,13 +3,23 @@ import {kitchenPreparationEquipmentArray} from '../data/products/kitchenPreparat
 import {kitchenCookingEquipmentArray} from '../data/products/kitchenCookingEquipments'
 import {steamCookingEquipmentArray} from '../data/products/steamCookingEquipments'
 import {kitchenMachinesArray} from '../data/products/kitchenMachines'
+import {refrigenatorDatas} from '../data/products/Refrigenator'
+import {canteenEquipments} from '../data/products/canteenEquipments'
+import {kitchenTrolleys} from '../data/products/kitchenTrolleys'
+import {washEquipments} from '../data/products/washEquipmemts'
+import {exhaustArray} from '../data/products/kitchenExhaust'
 
 const allPdctsArray=[
     ...kitchenStorageEquipmentArray,
     ...kitchenPreparationEquipmentArray,
     ...kitchenCookingEquipmentArray, 
     ...steamCookingEquipmentArray,
-    ...kitchenMachinesArray   
+    ...kitchenMachinesArray,
+    ...refrigenatorDatas,
+    ...canteenEquipments,
+    ...kitchenTrolleys,
+    ...washEquipments,
+    ...exhaustArray   
     ]
 
 export function findRelated(pdct){

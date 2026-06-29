@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { IoIosStar, IoIosStarOutline } from "react-icons/io";
 import CallUsBtn from '../components/Buttons/CallUsBtn';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { findRelated } from '../utils/product'
+import { findRelated } from '../utils/relatedProduct'
 import { FaRegHeart } from "react-icons/fa";
 import Link from 'next/link'
 import "swiper/css";

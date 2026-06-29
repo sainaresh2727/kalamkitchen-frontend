@@ -61,10 +61,14 @@ const closeDrawer = () => {
     <Link href="/pages/kitchen-cooking-equipments">Kitchen Cooking Equipments</Link>
     <Link href="/pages/kitchen-steaming-equipments">Steam Cooking Equipments</Link>
     <Link href="/pages/kitchen-machine-equipments">Kitchen Machines</Link>
-    <Link href="/">Refrigeration Equipments</Link>
-    <Link href="/">Serving / Canteen Equipments</Link>
-    <Link href="/">Kitchen Trolleys</Link>
-    <Link href="/">Wash / Plate Wash Equipments</Link>
+    <Link href="/pages/refrigenator-equipments">Refrigeration Equipments</Link>
+    <Link href="/pages/canteen-equipments">Serving / Canteen Equipments</Link>
+    <Link href="/pages/kitchen-trolleys">Kitchen Trolleys</Link>
+    <Link href="/pages/wash-equipments">Washing Equipments</Link>
+    <Link href="/pages/kitchen-exhaust-equipments">Exhaust / LPG /  Steam Panel Equipments</Link>
+    <Link href="/pages/kitchen-machine-equipments">Bakery Equipments</Link>
+    <Link href="/pages/kitchen-machine-equipments">Customized Fabrication</Link>
+    <Link href="/pages/kitchen-machine-equipments">Dinning Table & Chairs</Link>
   </div>
    </li>
    
