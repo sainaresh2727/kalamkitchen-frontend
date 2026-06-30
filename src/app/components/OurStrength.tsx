@@ -77,24 +77,34 @@ function OurStrength() {
 
     <div className='flex flex-col gap-2'>
     <h2 className='text-3xl lg:text-5xl font-bold leading-normal text-center'> Our Strengths That <span className='special-text'>Drive Excellence</span></h2>
-    <p className='text-gray-700 para-content text-center'>Kitchen Equipment is a trusted name among kitchen equipment manufacturers in Chennai, delivering high-quality commercial kitchen solutions across India and international markets. Established in 2004, we specialize in manufacturing refrigeration equipment, hot kitchen equipment, and customized fabricated kitchen solutions designed to meet the evolving needs of hotels, restaurants, canteens, and food service industries.</p>
-    <p className='text-gray-700 para-content text-center'>As experienced hotel kitchen equipment manufacturers in Chennai, we also provide expert kitchen consultancy, planning, and complete setup solutions for kitchen equipment suppliers and food industry businesses. Our focus on innovation, precision engineering, and performance-driven manufacturing.</p>
+    <p className='text-gray-700 para-content text-center w-full lg:w-[800px]'>Kitchen Equipment is a trusted name among kitchen equipment manufacturers in Chennai, delivering high-quality commercial kitchen solutions across India and international markets. Established in 2004, we specialize in manufacturing refrigeration equipment, hot kitchen equipment, and customized fabricated kitchen solutions designed to meet the evolving needs of hotels, restaurants, canteens, and food service industries.</p>
+    <p className='text-gray-700 para-content text-center w-full lg:w-[800px]'>As experienced hotel kitchen equipment manufacturers in Chennai, we also provide expert kitchen consultancy, planning, and complete setup solutions for kitchen equipment suppliers and food industry businesses. Our focus on innovation, precision engineering, and performance-driven manufacturing.</p>
     </div>
 
     <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
-    {
-        strengthData.map((x,y)=>{
-            return(
-                <div className='strength-card px-6 py-8' key={x.id}>
-                <div className='icon-parent'>
-                <span className='text-2xl'>{x.icon}</span>
-                </div>
-                <h6 className='mt-3'>{x.title}</h6>
-                <p className='text-gray-700 para-content'>{x.desc}</p>
-                </div>
-            )
-        })
-    }
+    {strengthData.map((x, i) => {
+
+
+return (
+  <div
+    key={i}
+    className="group rounded-3xl border border-gray-200 bg-white p-8 transition-all duration-500 hover:-translate-y-3 hover:border-[#27A8A3] hover:border-t-4 hover:shadow-[0_20px_45px_rgba(39,168,163,0.15)]"
+  >
+    <div className="w-16 h-16 rounded-3xl bg-[#EEF8F7] flex items-center justify-center transition-all duration-500 group-hover:bg-[#27A8A3]">
+     
+    <span className="text-3xl text-[#27A8A3] transition-all duration-500 group-hover:text-white" >{x.icon}</span>
+    </div>
+
+    <h6 className="mt-6 text-[15px] font-semibold">
+      {x.title}
+    </h6>
+
+    <p className="mt-3 text-gray-600 leading-7 text-[13px]">
+      {x.desc}
+    </p>
+  </div>
+);
+})}
     </div>
 
     </div>

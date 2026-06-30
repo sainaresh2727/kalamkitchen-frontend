@@ -12,6 +12,8 @@ import {canteenEquipments} from '../../data/products/canteenEquipments'
 import {kitchenTrolleys} from '../../data/products/kitchenTrolleys'
 import {washEquipments} from '../../data/products/washEquipmemts'
 import {exhaustArray} from '../../data/products/kitchenExhaust'
+import {bakeryEquipments} from '../../data/products/bakeryEquipments'
+import {customizeFabrication} from '../../data/products/customizedFabrication'
 
 import { useParams } from 'next/navigation';
 import MainpdctPage from '../../components/MainpdctPage';
@@ -33,7 +35,9 @@ import MainpdctPage from '../../components/MainpdctPage';
     ...canteenEquipments,
     ...kitchenTrolleys,
     ...washEquipments,
-    ...exhaustArray
+    ...exhaustArray,
+    ...bakeryEquipments,
+    ...customizeFabrication
     ]
 
   // Finding Product

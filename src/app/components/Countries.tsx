@@ -5,6 +5,7 @@
 
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -12,6 +13,7 @@ import { useState } from "react";
 interface Location {
   name: string;
   sub: string;
+  slug:string;
   popular?: boolean;
   flag?: string;
 }
@@ -20,6 +22,7 @@ interface Region {
   tag: string;
   title: string;
   locations: Location[];
+
 }
 
 interface Stat {
@@ -36,15 +39,18 @@ const INDIA: Region = {
     {
       name: "Commercial Kitchen Equipment Tirupati",
       sub: "Andhra Pradesh",
+      slug:"/locations/commercial-kitchen-equipment-tirupati"
     },
     {
       name: "Commercial Kitchen Equipment Andaman",
       sub: "Andaman & Nicobar Islands",
+      slug:"/locations/commercial-kitchen-equipment-andaman"
     },
     {
       name: "Trusted Commercial Kitchen Equipment Bangalore",
       sub: "Karnataka",
       popular: true,
+      slug:"/locations/commercial-kitchen-equipment-tirupati"
     },
   ],
 };
@@ -53,10 +59,10 @@ const INTERNATIONAL: Region = {
   tag: "INTL",
   title: "International",
   locations: [
-    { name: "Commercial Kitchen Equipment Malaysia", sub: "Kuala Lumpur", flag: "🇲🇾" },
-    { name: "Commercial Kitchen Equipment Maldives", sub: "Malé", flag: "🇲🇻" },
-    { name: "Commercial Kitchen Equipment South Korea", sub: "Seoul", flag: "🇰🇷" },
-    { name: "Commercial Kitchen Equipment Sri Lanka", sub: "Colombo", flag: "🇱🇰" },
+    { name: "Commercial Kitchen Equipment Malaysia", sub: "Kuala Lumpur", flag: "🇲🇾", slug:"/locations/commercial-kitchen-equipment-tirupati"},
+    { name: "Commercial Kitchen Equipment Maldives", sub: "Malé", flag: "🇲🇻",slug:"/locations/commercial-kitchen-equipment-tirupati" },
+    { name: "Commercial Kitchen Equipment South Korea", sub: "Seoul", flag: "🇰🇷",slug:"/locations/commercial-kitchen-equipment-tirupati" },
+    { name: "Commercial Kitchen Equipment Sri Lanka", sub: "Colombo", flag: "🇱🇰",slug:"/locations/commercial-kitchen-equipment-tirupati" },
   ],
 };
 
@@ -97,12 +103,12 @@ function LocationItem({
       </div>
 
       {/* Name + state */}
-      <div className="flex flex-col gap-[2px] flex-1 min-w-0">
+      <Link className="flex flex-col gap-[2px] flex-1 min-w-0" href={loc.slug}>
         <span className="text-[15px] font-bold text-[#0d2e2c]">
           {loc.name}
         </span>
         <span className="text-[13px] text-[#27A8A3] font-bold">{loc.sub}</span>
-      </div>
+      </Link>
 
       {/* Badges */}
       <div className="flex items-center gap-[6px] flex-shrink-0 ml-2">

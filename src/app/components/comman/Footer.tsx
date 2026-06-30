@@ -27,7 +27,7 @@ function Footer() {
         className="w-[170px] h-auto"
       />
 
-      <p className="text-[12px] text-gray-600 leading-7">
+      <p className="text-[12px] text-gray-300 leading-7">
         Kalam Kitchen Equipments is a trusted manufacturer of commercial
         kitchen equipment, delivering durable stainless steel solutions for
         hotels, restaurants, canteens, and catering businesses.
@@ -57,7 +57,7 @@ function Footer() {
     
     <Link
       href="/"
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-transform duration-300 group-hover:translate-x-1" />
       Home
@@ -65,7 +65,7 @@ function Footer() {
 
     <Link
       href="#"
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-transform duration-300 group-hover:translate-x-1" />
       About Us
@@ -73,7 +73,7 @@ function Footer() {
 
     <Link
       href="#"
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-transform duration-300 group-hover:translate-x-1" />
       Products
@@ -81,7 +81,7 @@ function Footer() {
 
     <Link
       href="#"
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-transform duration-300 group-hover:translate-x-1" />
       Blogs
@@ -89,7 +89,7 @@ function Footer() {
 
     <Link
       href="#"
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-1"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-transform duration-300 group-hover:translate-x-1" />
       Contact Us
@@ -108,7 +108,7 @@ function Footer() {
 
     <Link
       href=""
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-all duration-300 group-hover:translate-x-1 group-hover:scale-125" />
       Commercial Kitchen Equipment
@@ -116,7 +116,7 @@ function Footer() {
 
     <Link
       href=""
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-all duration-300 group-hover:translate-x-1 group-hover:scale-125" />
       Stainless Steel Tables
@@ -124,7 +124,7 @@ function Footer() {
 
     <Link
       href=""
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-all duration-300 group-hover:translate-x-1 group-hover:scale-125" />
       Kitchen Storage Units
@@ -132,7 +132,7 @@ function Footer() {
 
     <Link
       href=""
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-all duration-300 group-hover:translate-x-1 group-hover:scale-125" />
       Refrigeration Equipment
@@ -140,7 +140,7 @@ function Footer() {
 
     <Link
       href=""
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-all duration-300 group-hover:translate-x-1 group-hover:scale-125" />
       Bakery Equipment
@@ -148,7 +148,7 @@ function Footer() {
 
     <Link
       href=""
-      className="group flex items-center gap-2 text-gray-700 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
+      className="group flex items-center gap-2 text-gray-300 text-[12px] transition-all duration-300 hover:text-[#27A8A3] hover:translate-x-2"
     >
       <IoChevronForward className="text-[#27A8A3] text-sm transition-all duration-300 group-hover:translate-x-1 group-hover:scale-125" />
       Canteen Equipment
@@ -167,28 +167,28 @@ function Footer() {
 
     <div className="flex items-start gap-3 group">
       <IoLocationOutline className="text-[#27A8A3] text-5xl"/>
-      <p className="text-gray-700 text-[12px] group-hover:text-[#27A8A3] transition">
+      <p className="text-gray-300 text-[12px] group-hover:text-[#27A8A3] transition">
       Kalam Kitchen Equipments NO 3273,PHASE 1/2,TNHB, AYAPAKKAM, THIRUVALLUR CHENNAI 600077
     </p>
     </div>
 
     <div className="flex items-center gap-3 group">
       <IoCallOutline className="text-[#27A8A3] text-lg" />
-      <p className="text-gray-700 text-[12px] group-hover:text-[#27A8A3] transition">
+      <p className="text-gray-300 text-[12px] group-hover:text-[#27A8A3] transition">
         +91 XXXXX XXXXX
       </p>
     </div>
 
     <div className="flex items-center gap-3 group">
       <IoMailOutline className="text-[#27A8A3] text-lg" />
-      <p className="text-gray-700 text-[12px] group-hover:text-[#27A8A3] transition">
+      <p className="text-gray-300 text-[12px] group-hover:text-[#27A8A3] transition">
       kalamkitchenequipments@gmail.com
       </p>
     </div>
 
     <div className="flex items-center gap-3 group">
       <IoTimeOutline className="text-[#27A8A3] text-lg mt-1" />
-      <p className="text-gray-700 text-[12px] group-hover:text-[#27A8A3] transition">
+      <p className="text-gray-300 text-[12px] group-hover:text-[#27A8A3] transition">
         Mon - Sat : 9:00 AM - 7:00 PM
       </p>
     </div>
@@ -204,7 +204,7 @@ function Footer() {
     <input
       type="email"
       placeholder="Enter your email"
-      className="w-full border border-gray-300 rounded-md px-3 py-2 text-[12px] focus:outline-none focus:border-[#27A8A3]"
+      className="w-full border border-gray-300 rounded-md px-3 py-2 text-[12px] focus:outline-none focus:border-[#27A8A3] text-white"
     />
 
     <button className="bg-[#27A8A3] text-white px-4 py-2 rounded-md text-sm hover:bg-[#1e8e8a] transition text-[12px]">
@@ -217,7 +217,7 @@ function Footer() {
   </section>
 
 {/* Bottom Bar */}
-<section className="bg-[#27A8A3] py-4">
+<section className="bg-black py-4">
   <div className="container flex items-center justify-center">
 
     <p className="text-white text-[12px] text-center">

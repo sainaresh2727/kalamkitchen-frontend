@@ -114,21 +114,29 @@ function Certification() {
     <p className='text-gray-700 para-content text-center lg:text-left'>We are proud to hold ISO 9001:2015 certification — a testament to our unwavering  commitment to quality, safety, and continuous improvement in  every service we deliver.</p>
 
     <div className='grid grid-cols-1 lg:grid-cols-2  gap-7 mt-2'>
-    {
-        isoFeatures.map((x,y)=>{
-            return(
-                <div className='certification-card flex flex-col gap-2'>
-                
-                <div className='icon-parent'>
-                <span className='text-2xl'>{x.icon}</span>
-                </div>
+    {isoFeatures.map((x, i) => {
 
-                <h6 className='mt-3 text-1xl'>{x.title}</h6>
-                <p className='text-sm text-gray-700'>{x.desc}</p>
-                </div>
-            )
-        })
-    }
+
+return (
+  <div
+    key={i}
+    className="group rounded-3xl border border-gray-200 bg-white p-8 transition-all duration-500 hover:-translate-y-3 hover:border-[#27A8A3] hover:border-t-4 hover:shadow-[0_20px_45px_rgba(39,168,163,0.15)]"
+  >
+    <div className="w-16 h-16 rounded-3xl bg-[#EEF8F7] flex items-center justify-center transition-all duration-500 group-hover:bg-[#27A8A3]">
+     
+    <span className="text-3xl text-[#27A8A3] transition-all duration-500 group-hover:text-white" >{x.icon}</span>
+    </div>
+
+    <h6 className="mt-6 text-[15px] font-semibold">
+      {x.title}
+    </h6>
+
+    <p className="mt-3 text-gray-600 leading-7 text-[13px]">
+      {x.desc}
+    </p>
+  </div>
+);
+})}
     </div>
    
     </div>

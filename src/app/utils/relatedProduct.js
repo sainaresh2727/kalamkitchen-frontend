@@ -8,6 +8,8 @@ import {canteenEquipments} from '../data/products/canteenEquipments'
 import {kitchenTrolleys} from '../data/products/kitchenTrolleys'
 import {washEquipments} from '../data/products/washEquipmemts'
 import {exhaustArray} from '../data/products/kitchenExhaust'
+import {bakeryEquipments} from '../data/products/bakeryEquipments'
+import {customizeFabrication} from '../data/products/customizedFabrication'
 
 const allPdctsArray=[
     ...kitchenStorageEquipmentArray,
@@ -19,7 +21,9 @@ const allPdctsArray=[
     ...canteenEquipments,
     ...kitchenTrolleys,
     ...washEquipments,
-    ...exhaustArray   
+    ...exhaustArray,
+    ...bakeryEquipments,
+    ...customizeFabrication   
     ]
 
 export function findRelated(pdct){

@@ -66,8 +66,8 @@ const closeDrawer = () => {
     <Link href="/pages/kitchen-trolleys">Kitchen Trolleys</Link>
     <Link href="/pages/wash-equipments">Washing Equipments</Link>
     <Link href="/pages/kitchen-exhaust-equipments">Exhaust / LPG /  Steam Panel Equipments</Link>
-    <Link href="/pages/kitchen-machine-equipments">Bakery Equipments</Link>
-    <Link href="/pages/kitchen-machine-equipments">Customized Fabrication</Link>
+    <Link href="/pages/baking-equipments">Bakery Equipments</Link>
+    <Link href="/pages/Customized-Fabrication">Customized Fabrication</Link>
     <Link href="/pages/kitchen-machine-equipments">Dinning Table & Chairs</Link>
   </div>
    </li>
