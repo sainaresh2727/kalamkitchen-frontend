@@ -158,7 +158,7 @@ function RegionPanel({
       </div>
 
       {/* List */}
-      <div className="flex flex-col">
+      <u className="flex flex-col">
         {region.locations.map((loc, i) => (
           <LocationItem
             key={loc.name}
@@ -166,7 +166,7 @@ function RegionPanel({
             isLast={i === region.locations.length - 1}
           />
         ))}
-      </div>
+      </u>
     </div>
   );
 }

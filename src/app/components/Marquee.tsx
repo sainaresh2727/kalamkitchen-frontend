@@ -36,7 +36,7 @@ export default function IndustryMarquee() {
     <div className="flex justify-center">
     <div className='trusted-badge'>
     <div className="dot"></div>
-    <p className="uppercase" style={{letterSpacing:"1px"}}>Serving businesses across Andhra Pradesh & beyond</p>
+    <p className="uppercase" style={{letterSpacing:"1px"}}>Serving businesses Across  & beyond</p>
     </div>
     </div>
 

@@ -1,10 +1,23 @@
 // DiningTable  Equipment Array - ID-4000
+import fourseated from '../../../../public/Images/Products/customizedfabrication/4seated.png'
+import eightseated from '../../../../public/Images/Products/customizedfabrication/8seated.png'
+import tenseated from '../../../../public/Images/Products/customizedfabrication/10seated.png'
+import restauranttablechairs from '../../../../public/Images/Products/customizedfabrication/restauranttablechairs.png'
+import restauranttablechairswithgrantie from '../../../../public/Images/Products/customizedfabrication/restauranttablechairswithgrantie.png'
+import mstableframe from '../../../../public/Images/Products/customizedfabrication/mstableframe.png'
+import canteendining from '../../../../public/Images/Products/customizedfabrication/canteendining.png'
+import standingtable from '../../../../public/Images/Products/customizedfabrication/standingtable.png'
+import ssdesignedchairs from '../../../../public/Images/Products/customizedfabrication/ssdesignedchairs.png'
+import rubberwoodchairs from '../../../../public/Images/Products/customizedfabrication/rubberwoodchairs.png'
+import ssrollingchairs from '../../../../public/Images/Products/customizedfabrication/ssrollingchairs.png'
+import ssmsdiningtable from '../../../../public/Images/Products/customizedfabrication/ssmsdiningtable.png'
+import canteenequip from '../../../../public/Images/Products/customizedfabrication/canteenequip.png'
 
 export const diningTableArray=[
     {
         id:4001,
         name:"4 Seated Dinning Table",
-        img:sugarsyrup,
+        img:fourseated,
         des:"Enhance your dining area with Kalam Kitchen's 4 Seated Dining Table, designed for intimate and efficient dining experiences. Our table features durable construction, compact size, and a stylish design. Ideal for cafes, small restaurants, and casual dining areas, it provides a sturdy and space-saving dining solution. The robust build ensures long-lasting performance, while the smooth surface enhances cleanliness and maintenance. Trust our 4 Seated Dining Table for reliable and attractive dining arrangements, improving guest comfort and dining efficiency in smaller spaces.",
         keyFeatures: [
             {
@@ -56,7 +69,7 @@ export const diningTableArray=[
     {
         id:4002,
         name:"8 Seated Dinning Table",
-        img:sugarsyrup,
+        img:eightseated,
         des:"Kalam Kitchen's 8 Seated Dining Table is designed for spacious and comfortable dining experiences in commercial settings. Our table features durable construction, ample seating capacity, and an elegant design. Ideal for restaurants, cafeterias, and dining halls, it provides a sturdy and stylish dining solution. The robust build ensures long-lasting performance, while the smooth surface enhances cleanliness and maintenance. Trust our 8 Seated Dining Table for reliable and attractive dining arrangements, improving guest comfort and dining efficiency in your establishment.",
         keyFeatures: [
             {
@@ -112,7 +125,7 @@ export const diningTableArray=[
     {
         id:4003,
         name:"10 Seated Dinning Table",
-        img:sugarsyrup,
+        img:tenseated,
         des:"Kalam Kitchen's 10 Seated Dining Table is designed for large group dining in commercial settings. Our table features durable construction, generous seating capacity, and an elegant design. Ideal for banquet halls, cafeterias, and large restaurants, it provides a sturdy and stylish dining solution. The robust build ensures long-lasting performance, while the smooth surface enhances cleanliness and maintenance. Trust our 10 Seated Dining Table for reliable and attractive dining arrangements, improving guest comfort and dining efficiency for larger groups.",
         keyFeatures: [
             {
@@ -168,7 +181,7 @@ export const diningTableArray=[
     {
         id:4004,
         name:"Restaurant Table & Chairs",
-        img:sugarsyrup,
+        img:restauranttablechairs,
         des:"Enhance your dining area with Kalam Kitchen's Restaurant Table & Chairs, designed for comfort and style. Our set features durable construction, ergonomic seating, and a sleek design. Ideal for restaurants, cafes, and dining halls, it provides a sturdy and stylish dining solution. The robust build ensures long-lasting performance, while the smooth surfaces enhance cleanliness and maintenance. Trust our Restaurant Table & Chairs for reliable and attractive dining arrangements, improving guest comfort and dining efficiency in your establishment.",
         keyFeatures: [
             {
@@ -224,7 +237,7 @@ export const diningTableArray=[
     {
         id:4005,
         name:"Restaurant Table / Chairs with Granite Top",
-        img:sugarsyrup,
+        img:restauranttablechairswithgrantie,
         des:"Upgrade your dining area with Kalam Kitchen's Restaurant Table / Chairs with Granite Top, designed for luxury and durability. Our set features a sturdy construction, elegant granite top, and ergonomic seating. Ideal for high-end restaurants, cafes, and dining halls, it provides a stylish and long-lasting dining solution. The robust build ensures reliable performance, while the easy-to-clean surfaces enhance maintenance. Trust our Restaurant Table / Chairs with Granite Top for reliable and attractive dining arrangements, elevating guest comfort and dining experience.",
         keyFeatures: [
             {
@@ -280,7 +293,7 @@ export const diningTableArray=[
     {
         id:4006,
         name:"MS Table Frame with Chair",
-        img:sugarsyrup,
+        img:mstableframe,
         des:"Optimize your dining space with Kalam Kitchen's MS Table Frame with Chair, designed for durability and style. Our table frame and chair set features sturdy mild steel construction, ergonomic design, and a sleek finish. Ideal for restaurants, cafes, and dining halls, it provides a reliable and comfortable seating solution. The robust build ensures long-lasting performance, while the easy-to-clean surfaces enhance maintenance. Trust our MS Table Frame with Chair for reliable and attractive dining arrangements, improving guest comfort and dining efficiency in your establishment.",
         keyFeatures: [
             {
@@ -333,7 +346,7 @@ export const diningTableArray=[
     {
         id:4007,
         name:"Canteen Dining Table",
-        img:sugarsyrup,
+        img:canteendining,
         des:"Kalam Kitchen's Canteen Dining Table is designed for robust and efficient dining solutions in busy canteens. Our table features durable construction, ample seating capacity, and a practical design. Ideal for schools, colleges, and corporate canteens, it provides a reliable and sturdy dining solution. The robust build ensures long-lasting performance, while the easy-to-clean surfaces enhance maintenance. Trust our Canteen Dining Table for reliable and efficient dining arrangements, improving guest comfort and operational efficiency in high-traffic dining areas.",
         keyFeatures : [
             {
@@ -381,7 +394,7 @@ export const diningTableArray=[
     {
         id:4008,
         name:"SS Standing Table",
-        img:sugarsyrup,
+        img:standingtable,
         des:"Optimize your space with Kalam Kitchen's SS Standing Table, designed for modern and efficient dining and working environments. Our table features durable stainless steel construction, ergonomic height, and a sleek design. Ideal for cafes, restaurants, and casual dining areas, it provides a sturdy and stylish standing solution. The robust build ensures long-lasting performance, while the smooth surface enhances cleanliness and maintenance. Trust our SS Standing Table for reliable and attractive standing arrangements, improving guest comfort and space utilization.",
          keywords : [
             {
@@ -429,7 +442,7 @@ export const diningTableArray=[
     {
         id:4009,
         name:"SS Designer Chair",
-        img:sugarsyrup,
+        img:ssdesignedchairs,
         des:"Upgrade your dining area with Kalam Kitchen's SS Designer Chair, designed for luxury and durability. Our chair features high-quality stainless steel construction and an ergonomic design for maximum comfort. Ideal for upscale restaurants, cafes, and dining halls, it provides a stylish and durable seating solution. The robust build ensures long-lasting performance, while the sleek design enhances the aesthetic appeal. Trust our SS Designer Chair for reliable and attractive seating arrangements, elevating guest comfort and dining experience.",
         keyFeatures : [
             {
@@ -477,7 +490,7 @@ export const diningTableArray=[
     {
         id:4010,
         name:"Rubber Wood Chair with SS Frame",
-        img:sugarsyrup,
+        img:rubberwoodchairs,
         des:"Elevate your dining space with Kalam Kitchen's Rubber Wood Chair with SS Frame, designed for comfort and elegance. Our chair features a sturdy stainless steel frame and a comfortable rubber wood seat and backrest. Ideal for restaurants, cafes, and dining halls, it provides a stylish and durable seating solution. The robust build ensures long-lasting performance, while the smooth surfaces enhance cleanliness and maintenance. Trust our Rubber Wood Chair with SS Frame for reliable and attractive seating arrangements, improving guest comfort and dining experience.",
         keyFeatures : [
             {
@@ -521,5 +534,173 @@ export const diningTableArray=[
          stock:"IN STOCK",
          reviewNumber:"4.5",
          reviewCound:"1520"
+    },
+    {
+      id:4011,
+      name:"SS Rolling Chairs",
+      img:ssrollingchairs,
+      des:"Enhance your dining area with Kalam Kitchen's SS Rolling Chairs, designed for mobility and durability. Our chairs feature stainless steel construction, ergonomic design, and smooth-rolling casters. Ideal for restaurants, cafes, and dining halls, they provide a reliable and versatile seating solution. The robust build ensures long-lasting performance, while the easy-to-clean surfaces enhance maintenance. Trust our SS Rolling Chairs for reliable and attractive seating arrangements, improving guest comfort and operational efficiency in your establishment.",
+      keyFeatures: [
+        {
+          title: "Mobility",
+          value:
+            "Equipped with wheels for easy movement and flexibility.",
+        },
+        {
+          title: "Durable Materials",
+          value:
+            "Made from high-quality stainless steel for strength and durability.",
+        },
+        {
+          title: "Comfortable Design",
+          value:
+            "Ergonomically designed for comfort during extended use.",
+        },
+        {
+          title: "Modern Look",
+          value:
+            "Sleek and contemporary design suitable for various settings.",
+        },
+        {
+          title: "Easy to Clean",
+          value:
+            "Stainless steel surface for effortless cleaning.",
+        },
+      ],
+      smartChoice: [
+        {
+          title: "Convenient Mobility",
+          value:
+            "Easy to move around for flexible seating arrangements.",
+        },
+        {
+          title: "Durable and Comfortable",
+          value:
+            "Built to last with a focus on comfort.",
+        },
+        {
+          title: "Stylish and Easy to Maintain",
+          value:
+            "Modern design with low maintenance requirements.",
+        },
+      ],
+       type:"DINING TABLE EQUIPMENTS",
+       ratingStar:5,
+       slug:"SS-Rolling-Chairs",
+       stock:"IN STOCK",
+       reviewNumber:"4.9",
+       reviewCound:"3020"
+    },
+    {
+      id:4011,
+      name:"SS / MS Dining Table",
+      img:ssmsdiningtable,
+      des:"Kalam Kitchen's SS / MS Dining Table is designed for versatile and durable dining solutions in commercial settings. Our table features a combination of stainless steel and mild steel construction, offering robustness and style. Ideal for restaurants, cafeterias, and dining halls, it provides a reliable and attractive dining solution. The robust build ensures long-lasting performance, while the smooth surface enhances cleanliness and maintenance. Trust our SS / MS Dining Table for reliable and stylish dining arrangements, improving guest comfort and dining efficiency.",
+      keyFeatures: [
+        {
+          title: "Versatile Use",
+          value:
+            "Suitable for various settings including homes, cafeterias, and restaurants.",
+        },
+        {
+          title: "Durable Construction",
+          value:
+            "Made from stainless steel (SS) or mild steel (MS) for longevity.",
+        },
+        {
+          title: "Modern Design",
+          value:
+            "Sleek and simple design that fits well in any dining space.",
+        },
+        {
+          title: "Stable and Strong",
+          value:
+            "Sturdy frame and legs ensure stability and durability.",
+        },
+        {
+          title: "Easy to Clean",
+          value:
+            "Designed for easy cleaning and maintenance.",
+        },
+      ],
+      smartChoice: [
+        {
+          title: "Versatile and Durable",
+          value:
+            "Suitable for multiple settings with strong construction.",
+        },
+        {
+          title: "Modern and Stylish",
+          value:
+            "Enhances any dining space with a sleek design.",
+        },
+        {
+          title: "Low Maintenance",
+          value:
+            "Easy to clean, ensuring lasting beauty and functionality.",
+        },
+      ],
+       type:"DINING TABLE EQUIPMENTS",
+       ratingStar:5,
+       slug:"SS-MS-Dining-Table",
+       stock:"IN STOCK",
+       reviewNumber:"4.5",
+       reviewCound:"920"
+    },
+    {
+      id:4012,
+      name:"Canteen Equipment",
+      img:canteenequip,
+      des:"Kalam Kitchen's Canteen Equipment is designed to support efficient and hygienic operations in busy canteen environments. Our range includes durable construction, practical design, and reliable performance. Ideal for schools, colleges, and corporate canteens, our equipment ensures smooth and efficient food preparation, storage, and service. The robust build guarantees long-lasting use, while the easy-to-clean surfaces enhance maintenance. Trust our Canteen Equipment for reliable and efficient solutions, improving operational efficiency and hygiene standards in high-traffic canteens.",
+      keyFeatures: [
+        {
+          title: "Comprehensive Range",
+          value:
+            "Includes a variety of equipment essential for canteens.",
+        },
+        {
+          title: "Durable Materials",
+          value:
+            "Made from high-quality materials for longevity and frequent use.",
+        },
+        {
+          title: "Practical Design",
+          value:
+            "Features practical and functional designs suited for canteen environments.",
+        },
+        {
+          title: "Easy to Clean",
+          value:
+            "Designed for easy maintenance and hygiene.",
+        },
+        {
+          title: "Efficient Use",
+          value:
+            "Enhances efficiency and convenience in canteen operations.",
+        },
+      ],
+      smartChoice: [
+        {
+          title: "Complete Solutions",
+          value:
+            "Offers a comprehensive range of canteen equipment.",
+        },
+        {
+          title: "Durable and Practical",
+          value:
+            "Built to withstand frequent use with practical designs.",
+        },
+        {
+          title: "Hygienic and Efficient",
+          value:
+            "Easy to clean and enhances operational efficiency.",
+        },
+      ],
+       type:"DINING TABLE EQUIPMENTS",
+       ratingStar:5,
+       slug:"Canteen-Equipment",
+       stock:"IN STOCK",
+       reviewNumber:"4.5",
+       reviewCound:"920"
     },
 ]

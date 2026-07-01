@@ -26,6 +26,7 @@ interface FeatureItem {
 // ── Emoji map ──────────────────────────────────────────────────
 
 
+
 // ── Feature Card — defined OUTSIDE the main component ─────────
 function FeatureCard({ item, index }: { item: FeatureItem; index: number }) {
   
@@ -53,6 +54,7 @@ function MainpdctPage({ product }: any) {
   const relatedProducts = findRelated(product)
   const [open, setOpen] = useState(false)
   const [activeTab, setActiveTab] = useState<"features" | "smart">("features")
+  const [loading,setLoading]=useState(false)
 
   const [contactDatas, setContactDatas] = useState({
     name: "",
@@ -74,6 +76,8 @@ function MainpdctPage({ product }: any) {
   async function addContactDatas(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     try {
+
+      setLoading(true)
       const res = await api.post('/user/add/contact', contactDatas)
       toast.success(res.data.message);
       setContactDatas({
@@ -87,6 +91,9 @@ function MainpdctPage({ product }: any) {
     } catch (err) {
       const error = err as AxiosError<{ message: string }>;
       alert(error.response?.data?.message || "Something went wrong");
+    }
+    finally{
+      setLoading(false)
     }
   }
 
@@ -461,7 +468,7 @@ function MainpdctPage({ product }: any) {
                 className="group relative overflow-hidden w-full h-14 rounded-2xl text-white hover:scale-[1.02] transition-all duration-300"
                 style={{ background: "var(--gradient-primary)" }}
               >
-                <span className="relative z-10">Send Enquiry →</span>
+                <span className="relative z-10">{loading ? "Sending..." : "Send Enquiry →"}</span>
                 <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition-all duration-700" />
               </button>
 

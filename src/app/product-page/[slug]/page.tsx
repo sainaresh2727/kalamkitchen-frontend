@@ -1,6 +1,6 @@
 
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import {kitchenStorageEquipmentArray} from '../../data/products/KitchenStorageEquip'
 import {kitchenPreparationEquipmentArray} from '../../data/products/kitchenPreparation'
@@ -14,6 +14,7 @@ import {washEquipments} from '../../data/products/washEquipmemts'
 import {exhaustArray} from '../../data/products/kitchenExhaust'
 import {bakeryEquipments} from '../../data/products/bakeryEquipments'
 import {customizeFabrication} from '../../data/products/customizedFabrication'
+import {diningTableArray} from '../../data/products/diningTable'
 
 import { useParams } from 'next/navigation';
 import MainpdctPage from '../../components/MainpdctPage';
@@ -24,6 +25,8 @@ import MainpdctPage from '../../components/MainpdctPage';
  function page() {
   const params= useParams();
   const slug=params?.slug
+
+
 
   const allProducts=[
     ...kitchenStorageEquipmentArray,
@@ -37,7 +40,8 @@ import MainpdctPage from '../../components/MainpdctPage';
     ...washEquipments,
     ...exhaustArray,
     ...bakeryEquipments,
-    ...customizeFabrication
+    ...customizeFabrication,
+    ...diningTableArray
     ]
 
   // Finding Product

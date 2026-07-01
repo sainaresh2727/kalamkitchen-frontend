@@ -68,11 +68,11 @@ const closeDrawer = () => {
     <Link href="/pages/kitchen-exhaust-equipments">Exhaust / LPG /  Steam Panel Equipments</Link>
     <Link href="/pages/baking-equipments">Bakery Equipments</Link>
     <Link href="/pages/Customized-Fabrication">Customized Fabrication</Link>
-    <Link href="/pages/kitchen-machine-equipments">Dinning Table & Chairs</Link>
+    <Link href="/pages/table-dinning">Dinning Table & Chairs</Link>
   </div>
    </li>
    
-   <li><Link href={'/'} className='links-ul'>Blogs</Link></li>
+   <li><Link href='#' className='links-ul'>Blogs</Link></li>
    <li><Link href={'/tool'} className='links-ul'>Tool</Link></li>
    </ul>
 

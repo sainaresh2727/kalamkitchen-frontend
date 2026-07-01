@@ -6,58 +6,40 @@ const faqs = [
   {
     id: 1,
     category: "General",
-    question: "What types of commercial kitchen equipment do you supply?",
+    question:
+      "Are Kalam Kitchen Equipments reliable kitchen equipment manufacturers in Chennai?",
     answer:
-      "We supply a comprehensive range of commercial kitchen equipment including industrial burners, deck ovens, refrigeration units, dishwashers, exhaust hoods, prep tables, deep fryers, display counters, and custom fabricated stainless steel furniture. Whether you're setting up a full restaurant kitchen or a single cloud kitchen station, we have it all.",
+      "Yes, we are among the trusted kitchen equipment manufacturers in Chennai, offering high-quality commercial kitchen equipment designed for durability, hygiene, and efficient food service operations. Our products meet industry standards and are trusted by hundreds of businesses across Tamil Nadu and beyond.",
   },
   {
     id: 2,
     category: "General",
-    question: "Do you supply equipment for home kitchens as well?",
+    question:
+      "Do you provide hotel kitchen equipment manufacturing services in Chennai?",
     answer:
-      "Our primary focus is commercial and institutional kitchens — restaurants, hotels, cloud kitchens, bakeries, and catering companies. However, for premium home kitchen setups requiring professional-grade equipment, we can certainly assist. Contact our team to discuss your specific requirements.",
+      "Yes, we are experienced hotel kitchen equipment manufacturers in Chennai, supplying customized cooking, refrigeration, storage, and stainless steel fabrication solutions for hotels, restaurants, and catering businesses. Every solution is tailored to the client's operational needs and kitchen layout.",
   },
   {
     id: 3,
     category: "Installation",
-    question: "Do you provide installation and commissioning services?",
+    question: "What equipment is needed in a commercial kitchen?",
     answer:
-      "Yes, absolutely. We offer end-to-end services including delivery, installation, commissioning, and staff training. Our certified technicians ensure every piece of equipment is installed to manufacturer specifications and complies with local safety regulations. We handle gas line connections, exhaust ducting, and electrical hookups.",
+      "Each commercial kitchen needs hand-washing stations, dishwashing equipment, an ice machine, a refrigerator, and a freezer. Obviously, numerous businesses will require more than that — cooking ranges, induction stoves, exhaust hoods, prep tables, and storage systems are also essential. We help you identify exactly what your kitchen needs based on your menu and volume.",
   },
   {
     id: 4,
     category: "Installation",
-    question: "How long does a full kitchen setup typically take?",
+    question:
+      "Where should you begin when selecting commercial kitchen equipment?",
     answer:
-      "Timelines depend on the scale of the project. A small cloud kitchen typically takes 5–7 working days. A full restaurant kitchen setup can take 2–4 weeks depending on equipment availability and site readiness. We provide a detailed project timeline during the consultation phase so you can plan accordingly.",
+      "First, you have to decide your exact space details as well as your business's unique requirements. In smaller establishments, you can make the most of the kitchen by using all vertical space and investing in easy-to-move equipment. Keep in mind you will also need ample room for workers to move around safely and efficiently.",
   },
   {
     id: 5,
     category: "Pricing",
-    question: "Can I get a customized quote for my kitchen project?",
+    question: "How might you save money on commercial kitchen equipment?",
     answer:
-      "Yes — every kitchen is unique, so we tailor our quotes to your exact specifications. You can fill out our contact form with your requirements and we'll prepare a detailed proposal within 24 hours. Quotes include equipment cost, delivery, installation, and optional AMC (Annual Maintenance Contract) pricing.",
-  },
-  {
-    id: 6,
-    category: "Pricing",
-    question: "Do you offer EMI or financing options for bulk purchases?",
-    answer:
-      "We work with several financial partners to offer flexible payment plans for bulk orders. EMI options are available for orders above a certain threshold. Please speak with our sales team during your consultation to explore what financing options are available for your project.",
-  },
-  {
-    id: 7,
-    category: "Service",
-    question: "What warranty do you offer on your equipment?",
-    answer:
-      "All equipment comes with the manufacturer's standard warranty, which typically ranges from 1 to 3 years depending on the brand and product category. We also offer extended warranty packages and Annual Maintenance Contracts (AMC) that cover preventive maintenance, priority service calls, and spare parts.",
-  },
-  {
-    id: 8,
-    category: "Service",
-    question: "How quickly can you respond to a service or breakdown call?",
-    answer:
-      "For clients on our AMC plan, we guarantee a response within 4 business hours and aim for same-day resolution for critical equipment failures. For non-AMC clients, our standard response time is within 24–48 hours. We have a dedicated service team based in Chennai ready to assist.",
+      "Start by deciding your exact space details and your business's specific requirements. In smaller establishments, maximize the kitchen by using vertical space and investing in versatile, easy-to-move gear. Choosing energy-efficient induction and electric systems can significantly reduce long-term operational costs. We also offer bulk pricing and flexible EMI options for larger projects.",
   },
 ];
 

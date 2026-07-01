@@ -50,6 +50,8 @@ function page() {
     productType:""
   })
 
+  const [loading,setLoading]=useState(false)
+
    //  Handlers
    const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -61,6 +63,7 @@ function page() {
   async function addContactDatas(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     try {
+      setLoading(true)
       const res = await api.post('/user/add/contact', contactDatas)
       toast.success(res.data.message);
       setContactDatas({
@@ -74,6 +77,9 @@ function page() {
     } catch (err) {
       const error = err as AxiosError<{ message: string }>;
       alert(error.response?.data?.message || "Something went wrong");
+    }
+    finally{
+      setLoading(false)
     }
   }
 
@@ -178,7 +184,7 @@ function page() {
     </div>
 
     <div className='mt-6'>
-    <input type="submit" className='contact-submit-btn mt-3' value={"CONTACT HERE"} />
+    <input type="submit" className='contact-submit-btn mt-3' value={  loading ? "Submitting..." : "CONTACT US"} />
     </div>
     </form>
 

@@ -10,6 +10,7 @@ import {washEquipments} from '../data/products/washEquipmemts'
 import {exhaustArray} from '../data/products/kitchenExhaust'
 import {bakeryEquipments} from '../data/products/bakeryEquipments'
 import {customizeFabrication} from '../data/products/customizedFabrication'
+import {diningTableArray} from '../data/products/diningTable'
 
 const allPdctsArray=[
     ...kitchenStorageEquipmentArray,
@@ -23,7 +24,8 @@ const allPdctsArray=[
     ...washEquipments,
     ...exhaustArray,
     ...bakeryEquipments,
-    ...customizeFabrication   
+    ...customizeFabrication,
+    ...diningTableArray   
     ]
 
 export function findRelated(pdct){
